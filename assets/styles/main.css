@@ -41,4 +41,20 @@ nav{
 #Inicio>.subTitulo{
     font-size: 27px;
 }
+.cont-btn-inicio{
+    padding: 20px;
+}
+.cont-btn-inicio>.btn{
+    padding: 8px;
+    margin: 0px 9px;
+    border-radius: 7px;
+    color:black;
+    background: rgb(245,245,221);
+    background: radial-gradient(circle, rgba(245,245,221,1) 0%, rgba(228,228,171,1) 33%, rgba(224,224,121,1) 100%);
+    border: 1px solid black;
+    text-decoration: none;
+  }
+  .btn>i{
+    padding: 4px;
+  }
 /*Fin inicio */
