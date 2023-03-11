@@ -4,12 +4,23 @@
     box-sizing: border-box;
 }
 /* header */
-.nav-links{
+header{
+    padding: 15px;
+    background-color: rgb(49, 48, 48);
+    box-shadow: 4px 3px 4px 4px rgba(44, 43, 43, 0.452);
+}
+.logo-portafolio{
+  width: 130px;
+  border-radius: 6px;
+}
+.nav-links>a{
+  margin: 6px;
+  text-decoration: none;
   
 }
-
 nav{
     display: flex;
     justify-content:space-between;
+    align-items: center;
 }
 /*Fin header */
