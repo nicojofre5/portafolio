@@ -5,9 +5,9 @@
 }
 /* header */
 header{
-    padding: 15px;
+    padding: 5px 5px;
     background-color: rgb(49, 48, 48);
-    box-shadow: 4px 3px 4px 4px rgba(44, 43, 43, 0.452);
+    box-shadow: 3px 2px 4px 4px rgba(24, 24, 24, 0.452);
 }
 .logo-portafolio{
   width: 130px;
@@ -16,6 +16,9 @@ header{
 .nav-links>a{
   margin: 6px;
   text-decoration: none;
+  color: whitesmoke;
+  font-size: 18px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   
 }
 nav{
@@ -24,3 +27,18 @@ nav{
     align-items: center;
 }
 /*Fin header */
+
+/* Inicio */
+#Inicio{
+    min-height: 100vh;
+    padding: 50px;
+    text-align: center;
+}
+#Inicio>.tituloNombre{
+    padding: 230px 0px 0px;
+    font-size: 41px;
+}
+#Inicio>.subTitulo{
+    font-size: 27px;
+}
+/*Fin inicio */
