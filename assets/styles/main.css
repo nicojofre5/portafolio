@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 /* header */
 header{
@@ -27,7 +28,13 @@ nav{
     display: flex;
     justify-content:space-between;
     align-items: center;
-
+}
+.nav-links>button{
+  padding: 5px;
+  margin: 0px 13px;
+}
+.fa-circle-half-stroke{
+  font-size: 20px;
 }
 /*Fin header */
 
@@ -71,6 +78,7 @@ nav{
 #sobreMi{
   min-height: 100vh;
   padding: 40px 0px;
+  background-color: azure;
 }
 #sobreMi>h2{
   padding: 60px 47px 20px;
@@ -108,6 +116,9 @@ fieldset{
   border-radius: 100%;padding: 20px;
   margin: 2px;
 
+}
+.card>figcaption{
+  text-align: center;
 }
 .datos-skill{
   display: block;
