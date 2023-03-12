@@ -67,12 +67,12 @@ nav{
   }
 /*Fin inicio */
 
-/* Skills  */
-#Skills{
+/* About me  */
+#sobreMi{
   min-height: 100vh;
   padding: 40px 0px 0px;
 }
-#Skills>h2{
+#sobreMi>h2{
   padding: 60px 10px 20px;
 }
 /*FIN Skills  */
