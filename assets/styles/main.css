@@ -88,5 +88,20 @@ fieldset{
 }
 .cont-sobremi{
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.img-skill>img{
+  width: 120px;
+  height:85px;
+}
+.fila{
+  display: flex;
+  justify-content: center;
+  flex-wrap:nowrap;
+
+}
+.cont-card-skill{
+  padding:50px;
 }
 /*FIN Sobre mi */
