@@ -70,7 +70,7 @@ nav{
 /* About me  */
 #sobreMi{
   min-height: 100vh;
-  padding: 40px 0px 0px;
+  padding: 40px 0px;
 }
 #sobreMi>h2{
   padding: 60px 47px 20px;
@@ -89,19 +89,28 @@ fieldset{
 .cont-sobremi{
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
 }
 .img-skill>img{
-  width: 120px;
+  width: 100px;
   height:85px;
 }
 .fila{
   display: flex;
   justify-content: center;
   flex-wrap:nowrap;
+  column-gap: 4px;
+  
 
 }
-.cont-card-skill{
-  padding:50px;
+.card{
+  border: 5px solid #060606;
+  border-radius: 100%;padding: 20px;
+  margin: 2px;
+
 }
+.datos-skill{
+  display: block;
+}
+
 /*FIN Sobre mi */
