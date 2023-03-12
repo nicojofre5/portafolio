@@ -78,4 +78,9 @@ nav{
 #sobreMi>h3{
   padding:20px 50px;
 }
+.img-perfil>img{
+  width: 210px;
+  border-radius: 100%;
+  border: 1px solid grey;
+}
 /*FIN Skills  */
