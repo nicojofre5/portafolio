@@ -195,6 +195,26 @@ fieldset{
 }
 
 /* Fin seccion contacto  */
+/* Footer */
+
+footer{
+  padding:30px;
+  margin: 0;
+}
+.btn>.fa-brands{
+  font-size: 24px;
+}
+.copyright,.rrss-footer{
+  text-align: center;
+  margin: 16px;
+}
+.copyright>h5{
+  font-size: 15px;
+}
+.footer-user{
+  text-decoration:none;
+}
+/* Fin de footer  */
 
 
 /* Multi selectores */
