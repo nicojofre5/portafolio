@@ -139,14 +139,15 @@ fieldset{
 .btn-cv{
   background-color: rgb(249, 228, 252);
   padding: 5px;
-  border: 1px solid grey;
+  border: 3px solid rgb(130, 72, 172);
   border-radius: 4px;
   text-decoration: none;
   font-family: fantasy;
-  box-shadow: 4px;
+  box-shadow: 3px 4px rgba(128, 128, 128, 0.301);
 }
 .cont-btn-cv{
-  padding:14px 30px;
+  padding:25px 30px 10px;
+  
 
 }
 
