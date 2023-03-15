@@ -48,6 +48,7 @@ nav{
     background-size: cover;
     color: white;
     background-attachment: fixed;
+    border-bottom: 2px solid grey;
 
 }
 #Inicio>.tituloNombre{
@@ -75,18 +76,17 @@ nav{
   }
 /*Fin inicio */
 
+
+
 /* About me  */
 #sobreMi{
   min-height: 100vh;
   padding: 40px 0px;
   background-color: azure;
+  
 }
-#sobreMi>h2{
-  padding: 60px 47px 20px;
-}
-#sobreMi>h3{
-  padding:20px 50px;
-}
+
+
 .img-perfil>img{
   width: 200px;
   border-radius: 100%;
@@ -147,8 +147,29 @@ fieldset{
 }
 .cont-btn-cv{
   padding:25px 30px 10px;
-  
-
 }
 
+/* Seccion proyectos */
+
+.cont-card-proyecto{
+  background-color: #af0bac;
+
+}
+/* Fin seccion  proyectos */
 /*FIN Sobre mi */
+
+/* Multi selectores */
+#sobreMi,#Contacto,#Proyectos{
+  min-height: 100vh;
+  padding: 40px 0px;
+  background-color: azure;
+  
+}
+#sobreMi>h2,#Proyectos>h2,#Contacto>h2{
+  padding: 60px 47px 20px;
+}
+#sobreMi>h3,#Proyectos>h3{
+  padding:20px 50px;
+}
+
+/* Fin multi selectores */
