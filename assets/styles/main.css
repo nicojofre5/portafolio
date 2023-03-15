@@ -32,6 +32,7 @@ nav{
 .nav-links>button{
   padding: 5px;
   margin: 0px 13px;
+  cursor: pointer;
 }
 .fa-circle-half-stroke{
   font-size: 20px;
@@ -102,26 +103,51 @@ fieldset{
 .img-skill>img{
   width: 100px;
   height:85px;
+  padding: 10px;
 }
 .fila{
   display: flex;
   justify-content: center;
-  flex-wrap:nowrap;
+  flex-wrap:wrap;
   column-gap: 4px;
-  
-
 }
+
 .card{
-  border: 5px solid #060606;
-  border-radius: 100%;padding: 20px;
+  border: 5px solid #af0bac;
+  border-radius: 100%;
   margin: 2px;
+  padding: 5px;
 
 }
 .card>figcaption{
   text-align: center;
+  font-size: 12px;
 }
 .datos-skill{
   display: block;
+  padding: 9px 1px;
+}
+.cont-perfil>h5,.cont-skill>h5{
+  padding:10px 4px 40px;
+  text-align:center;
+  margin: 10px;
+  font-size: 20px;
+}
+.cont-info{
+  padding: 15px;
+}
+.btn-cv{
+  background-color: rgb(249, 228, 252);
+  padding: 5px;
+  border: 1px solid grey;
+  border-radius: 4px;
+  text-decoration: none;
+  font-family: fantasy;
+  box-shadow: 4px;
+}
+.cont-btn-cv{
+  padding:14px 30px;
+
 }
 
 /*FIN Sobre mi */
