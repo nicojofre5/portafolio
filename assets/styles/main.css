@@ -180,9 +180,18 @@ fieldset{
   display: flex;
   justify-content: center;
 }
-
-.sep-contacto>input{
+.sep-contacto{
+  margin: 10px 0px;
+}
+.sep-contacto>input,textarea{
   display: block;
+  width: 100%;
+}
+.cont-btn-enviar{
+  text-align: center;
+}
+.cont-btn-enviar>button{
+  padding: 5px;
 }
 
 /* Fin seccion contacto  */
