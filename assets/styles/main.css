@@ -148,6 +148,8 @@ fieldset{
 .cont-btn-cv{
   padding:25px 30px 10px;
 }
+/*FIN Sobre mi */
+
 
 /* Seccion proyectos */
 
@@ -156,10 +158,13 @@ fieldset{
 }
 .cont-img-proyecto>img{
   width: 240px;
+  border-radius: 7px;
+  border: 1px solid grey;
 
 }
 .cont-img-proyecto{
   padding: 5px;
+  
 }
 .row{
   display: flex;
@@ -169,7 +174,19 @@ fieldset{
 }
 
 /* Fin seccion  proyectos */
-/*FIN Sobre mi */
+
+/* Seccion contacto */
+.cont-form{
+  display: flex;
+  justify-content: center;
+}
+
+.sep-contacto>input{
+  display: block;
+}
+
+/* Fin seccion contacto  */
+
 
 /* Multi selectores */
 #sobreMi,#Contacto,#Proyectos{
@@ -184,5 +201,6 @@ fieldset{
 #sobreMi>h3,#Proyectos>h3{
   padding:20px 50px;
 }
+
 
 /* Fin multi selectores */
