@@ -120,9 +120,9 @@ fieldset{
   padding: 5px;
 
 }
-.card>figcaption{
+.img-skill>figcaption{
   text-align: center;
-  font-size: 12px;
+  font-size: 14px;
 }
 .datos-skill{
   display: block;
@@ -161,10 +161,10 @@ fieldset{
   width: 240px;
   border-radius: 7px;
   border: 1px solid grey;
-
 }
 .cont-img-proyecto{
-  padding: 5px;
+  padding: 24px;
+  margin: 10px;
   
 }
 .row{
@@ -211,8 +211,7 @@ form{
   border-bottom: 1px solid rgb(145, 145, 145);
 }
 .sep-contacto>input:focus{
-  border: transparent !;
-  box-shadow: 0px;
+ 
 }
 
 /* Fin seccion contacto  */
