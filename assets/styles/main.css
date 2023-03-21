@@ -76,14 +76,18 @@ nav{
     padding: 20px;
 }
 .cont-btn-inicio>.btn{
-    padding: 8px;
-    margin: 0px 9px;
-    border-radius: 7px;
-    color:black;
+    padding: 15px;
+    margin:0px 9px;
+    border-radius: 30px;
+    color:whitesmoke;
     background: rgb(245,245,221);
-    background: radial-gradient(circle, rgba(245,245,221,1) 0%, rgba(228,228,171,1) 33%, rgb(241, 241, 162) 80%);
+    background: radial-gradient(circle, rgb(193, 196, 199) 0%, rgb(74, 134, 207) 33%, rgba(56, 77, 196, 0.418) 80%);
     border: 1px solid black;
     text-decoration: none;
+  }
+  .cont-btn-inicio>.btn:hover{
+    background: rgb(197, 219, 235);
+
   }
   .btn>i{
     padding: 4px;
