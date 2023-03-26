@@ -15,7 +15,7 @@
 
 <body>
     <header>
-        <nav>
+        <nav class="menu-bar">
             <div>
                 <picture>
                    <a href=""><img class="logo-portafolio" src="https://www.pngitem.com/pimgs/m/485-4852378_sample-logo-png-transparent-png.png" alt=""></a>
@@ -23,14 +23,17 @@
             </div>
 
             <div class="nav-links">
-                <a href="#Inicio">Inicio</a>
-                <a href="#sobreMi">Sobre mi</a>
-                <a href="#Proyectos">Proyectos</a>  
-                <a href="#Contacto">Contacto</a>
+                <ul>
+                    <li><a href="#Inicio">Inicio</a></li>
+                    <li><a href="#sobreMi">Sobre mi</a></li>
+                    <li><a href="#Proyectos">Proyectos</a>  </li>
+                    <li><a href="#Contacto">Contacto</a></li>
+                </ul>                
+            </div>
+            <div class="">
                 <button><i class="fa-solid fa-circle-half-stroke"></i></button>
                 
             </div>
-            
                  
             
         </nav>
@@ -38,13 +41,12 @@
 
     <main>
         <section id="Inicio">
+            <h2>Desarrollador</h2>
             <h1 class="tituloNombre">Mi nombre es Nicolas Jofre</h1>
-            <h2 class="subTitulo">Soy desarrollador Front-End</h2>
-            <div class="cont-btn-inicio">
-                <a href="" class="btn"><i class="fa-brands fa-github"></i>Github</a>
-                <a href="" class="btn"><i class="fa-brands fa-linkedin"></i>Linkedin</a>
-                <a href="" class="btn"><i class="fa-brands fa-twitter"></i>Twitter</a>
+            <div class="cont-btn-cv">
+                <a href="#" class="btn-cv">Descargar CV</a>                        
             </div>
+          
         </section>
 
         <section id="sobreMi">
@@ -65,9 +67,12 @@
                             <label class="datos-skill" for="">Email</label>
                             <input type="email" value="lnicolasjofre1@gmail.com" disabled>
                         </fieldset>
-                        <fieldset class="cont-btn-cv">
-                            <a href="#" class="btn-cv">Descargar CV</a>                        
-                        </fieldset>
+                        <div class="cont-btn-inicio">
+                            <a href="" class="btn"><i class="fa-brands fa-github"></i></a>
+                            <a href="" class="btn"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="" class="btn"><i class="fa-brands fa-twitter"></i></a>
+                        </div>
+                 
                     </div>
                 </div>
 
