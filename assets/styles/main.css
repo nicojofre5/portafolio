@@ -39,10 +39,7 @@ header{
   width: 130px;
   border-radius: 6px;
 }
-.nav-links>a{
 
-  
-}
 .nav-links>a:hover{
  text-shadow: 2px 3px 2px rgb(161, 160, 160);
  transition: 0.4s;
