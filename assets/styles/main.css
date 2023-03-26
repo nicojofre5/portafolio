@@ -91,12 +91,19 @@ nav{
     margin: 2px 0px 0px;
     font-size: 4.70em;
     font-family: 'Play', sans-serif; 
+    animation-name: entradaTituloInicial;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+
 }
 #Inicio>.subTitulo{
     font-size: 1.25em;
     font-family: 'Martian Mono', monospace;
     padding-top: 290px;
     font-weight: 300;
+    animation-name:entradaSubtituloInicial;
+    animation-duration: 3s;
+    animation-timing-function: linear;
 }
 
 
@@ -124,7 +131,22 @@ nav{
   }
 /*Fin inicio */
 
-
+@keyframes entradaTituloInicial {
+  from{
+    transform: translateX(7%);
+  }
+  to{
+    transform: translateX(0%);
+  }
+}
+@keyframes entradaSubtituloInicial {
+  from{
+    transform: translateY(10%);
+  }
+  to{
+    transform: translateY(0%);
+  }
+}
 
 /* About me  */
 #sobreMi{
