@@ -80,8 +80,6 @@ nav{
     background-size: cover;
     color: white;
     border-bottom: 1px solid rgb(151, 151, 151);
-    
-
 }
 .nombreTitle{
   color: rgb(88, 90, 219);
@@ -92,7 +90,7 @@ nav{
     font-size: 4.70em;
     font-family: 'Play', sans-serif; 
     animation-name: entradaTituloInicial;
-    animation-duration: 3s;
+    animation-duration: 1.10s;
     animation-timing-function: linear;
 
 }
@@ -102,7 +100,7 @@ nav{
     padding-top: 290px;
     font-weight: 300;
     animation-name:entradaSubtituloInicial;
-    animation-duration: 3s;
+    animation-duration: 1.45s;
     animation-timing-function: linear;
 }
 
@@ -133,7 +131,7 @@ nav{
 
 @keyframes entradaTituloInicial {
   from{
-    transform: translateX(7%);
+    transform: translateX(3%);
   }
   to{
     transform: translateX(0%);
@@ -141,7 +139,7 @@ nav{
 }
 @keyframes entradaSubtituloInicial {
   from{
-    transform: translateY(10%);
+    transform: translateY(7%);
   }
   to{
     transform: translateY(0%);
