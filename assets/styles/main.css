@@ -45,6 +45,9 @@ header{
  transition: 0.4s;
 
 }
+.btn-togler{
+  display: none;
+}
 nav{
     display: flex;
     justify-content:space-between;
