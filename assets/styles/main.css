@@ -67,15 +67,18 @@ nav{
 /* Inicio */
 #Inicio{
     min-height: 100vh;
-    padding: 50px;
+    padding: 90px 50px;
     text-align:start;
-    background-image:linear-gradient(rgba(7, 7, 7, 0.924), rgba(24, 24, 24, 0.862)),url(/assets/img/wave.svg);
+    background-image:linear-gradient(rgba(5, 0, 61, 0.745), rgba(24, 24, 24, 0.862)),url(/assets/img/wave.svg);
     background-size: cover;
     color: white;
- 
-    border-bottom: 2px solid grey;
+    border-bottom: 1px solid rgb(151, 151, 151);
     
 
+}
+.nombreTitle{
+  color: rgb(88, 90, 219);
+  -webkit-text-stroke: 0.1px rgb(158, 194, 226);
 }
 .tituloNombre{
     margin: 2px 0px 0px;
@@ -104,7 +107,7 @@ nav{
   }
   .btn-cv:hover{
     background-color: rgb(14, 82, 131);
-    transition: 0.7s;
+    transition: 1.2s;
   }
   .cont-btn-cv{
     padding:25px 0px 0px;
