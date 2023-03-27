@@ -4,6 +4,9 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+body{
+  font-family: 'Play', sans-serif;
+}
 a{
   text-decoration: none;
   margin: 15px;
@@ -29,8 +32,8 @@ font-family: 'Play', sans-serif; */
 /* header */
 header{
     padding: 5px 5px;
-    background-color: rgb(49, 48, 48);
-    box-shadow: 3px 2px 4px 4px rgba(24, 24, 24, 0.452);
+    background-color:transparent;
+    box-shadow: 3px 3px 1px 2px rgba(24, 24, 24, 0.055);
     position:fixed;
     width: 100%;
     
@@ -288,9 +291,11 @@ fieldset{
   justify-content: center;
 }
 form{
-  background-color: rgb(195, 217, 237);
-  padding:40px;
-  border-radius: 5px;
+  background-color: rgb(7, 44, 79);
+  padding:100px;
+  margin-top: 80px;
+  border-radius: 20px;
+
 }
 .sep-contacto{
   margin: 10px 0px;
@@ -298,6 +303,7 @@ form{
 .sep-contacto>input,textarea{
   display: block;
   width: 100%;
+  resize: none;
 }
 
 .cont-btn-enviar{
@@ -309,11 +315,25 @@ form{
   margin: 10px 0px;
   background-color: rgb(8, 126, 25);
   color: white;
+  cursor: pointer;
 }
 .sep-contacto>input{
-  border: transparent;
   background-color: transparent;
-  border-bottom: 1px solid rgb(145, 145, 145);
+  border: 2px solid #31d9ff;
+  color:#eee;
+  height: 2em;
+  padding: 25px 6px;
+  font-size: 1em;
+}
+
+.sep-contacto label{
+  display: block;
+  opacity: 1;
+  transition: all 0.3s;
+  font-size: 1.0em;
+  color:rgb(234, 232, 232);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 10px 2px;
 }
 
 /* Fin seccion contacto  */
