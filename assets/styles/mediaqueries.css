@@ -6,7 +6,7 @@
         text-align: center;
         padding: 80px;
         width: 700px;
-        transform: translate(-180%,2%);
+    
         
     }
     .nav-links{
@@ -29,7 +29,7 @@
         
     }
     .btn-togler-event{
-        transform: translate(-54%,12%);
+        transform: translate(-50%,12%);
         background-color: transparent;
         transition: all 1s;
         
