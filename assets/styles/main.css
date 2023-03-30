@@ -38,7 +38,7 @@ header{
     box-shadow: 3px 3px 1px 2px rgba(24, 24, 24, 0.055);
     position:fixed;
     width: 100%;
-    transition: 3s;
+    transition: 1.62s;
     
 }
 .logo-portafolio{
@@ -64,8 +64,8 @@ nav{
     align-items: center;
 }
 .nav-links>button{
-  padding: 5px;
-  margin: 0px 13px;
+  padding: 2px;
+  margin: 0px 17px;
   cursor: pointer;
   border-radius: 100%;
 }
@@ -81,6 +81,7 @@ nav{
 }
 .menu .active{
   color: #26c4e8;
+  border-bottom: 1px solid #26c4e8af;
 }
 /*Fin header */
 
@@ -94,6 +95,7 @@ nav{
     color: white;
     border-bottom: 1px solid rgb(151, 151, 151);
 }
+
 .nombreTitle{
   color: rgb(88, 90, 219);
   -webkit-text-stroke: 0.1px rgb(158, 194, 226);
@@ -110,7 +112,7 @@ nav{
 #Inicio>.subTitulo{
     font-size: 2.0em;
     font-family:monospace;
-    margin-top: 290px;
+    margin-top: 200px;
     display: inline-block;
     letter-spacing: 0.10em;
     border-right: 0.15em solid rgb(111, 168, 215);

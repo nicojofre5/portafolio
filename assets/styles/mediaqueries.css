@@ -16,6 +16,7 @@
         padding: 0px 20px;
 
     }
+    
     .tituloNombre{
         font-size: 3.2em;
     }
@@ -29,10 +30,9 @@
         
     }
     .btn-togler-event{
-        transform: translate(-50%,0%);
+        transform: translate(-49%,12%);
         background-color: transparent;
         transition: all 1s;
-        
   
 
     }
@@ -43,6 +43,7 @@
         
     }
     #Inicio>.subTitulo{
+        margin-top: 300px;
         font-size: 1.5em;
         letter-spacing: 0.10em;
         border-right: 0.15em solid rgb(111, 168, 215);
@@ -70,4 +71,27 @@
       }
     }
 
+}
+@media only screen and (min-width:702px) and (max-width:1280px) {
+    #Inicio>.subTitulo{
+        animation: typing 3.2s steps(30,end),blink step-end 0.5s infinite;
+    }
+    @keyframes typing {
+        from {
+           width: 0%;
+             } 
+       to {
+           width: 21%;
+         }
+       }
+       /* animacion cursor */
+       
+       @keyframes blink {
+         from,to{
+           border-color: transparent;
+         }
+         50%{
+           border-color: rgb(111, 168, 215);
+         }
+       }
 }
