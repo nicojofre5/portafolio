@@ -41,7 +41,7 @@ font-family: 'Play', sans-serif; */
 header{
     padding: 3px 5px;
     background-color:rgba(24, 24, 24, 0.392);
-    box-shadow: 3px 3px 1px 2px rgba(24, 24, 24, 0.055);
+    box-shadow:6px 5px 22px 10px rgba(24, 24, 24, 0.6);
     position:fixed;
     width: 100%;
     transition: 1.62s;
@@ -172,7 +172,7 @@ to {
 
 @keyframes entradaTituloInicial {
   from{
-    transform: translateX(3%);
+    transform: translateX(4%);
   }
   to{
     transform: translateX(0%);
@@ -225,6 +225,8 @@ fieldset{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  background-color: #ddf7f7;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23077377' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
 }
 .img-skill>img{
   width: 100px;

@@ -4,8 +4,10 @@
         display: block;
         min-height: 30vh;
         text-align: center;
+        transform: translateX(10%);      
         padding: 80px;
         width: 700px;
+        margin-top: 12px;
     
         
     }
@@ -27,6 +29,7 @@
         padding: 10px;
         cursor:pointer;
       
+      
         
     }
     .btn-togler-event{
@@ -39,6 +42,7 @@
     .btn-togler>i{
         font-size: 2.75em;
         color: whitesmoke;
+        padding: 5px;
         
         
     }
