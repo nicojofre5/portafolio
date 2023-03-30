@@ -20,7 +20,7 @@
         <nav class="menu-bar">
             <div>
                 <picture>
-                   <a href=""><img class="logo-portafolio" src="assets/img/logo_portfolio.png"  alt="Logo - Nicolas Jofre"></a>
+                   <img class="logo-portafolio" src="assets/img/logo_portfolio.png"  alt="Logo - Nicolas Jofre">
                 </picture>
             </div>
 
@@ -33,7 +33,7 @@
                 </ul>                
             </div>
             <div class="">
-                <button class="btn-darkmode"><i class="fa-solid fa-circle-half-stroke"></i></button>
+                <button class="btn-darkmode" onclick="myFunction()"><i class="fa-solid fa-circle-half-stroke"></i></button>
                 <button class="btn-togler" id="btn-toggle"><i class="fa-solid fa-bars"></i></button>
             </div>
                  
@@ -41,7 +41,7 @@
         </nav>
     </header>
 
-    <main>
+   
         <section id="Inicio">
             <h3 class="subTitulo">Desarrollador</h3>
             <div>
@@ -74,9 +74,9 @@
                             <input type="email" value="lnicolasjofre1@gmail.com" disabled>
                         </fieldset>
                         <div class="cont-btn-inicio">
-                            <a href="nicojofre5" class="btn" target="_blank"><i class="fa-brands fa-github"></i></a>
-                            <a href="" class="btn"><i class="fa-brands fa-linkedin"></i></a>
-                            <a href="" class="btn"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="nicojofre5" class="btn gh" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            <a href="" class="btn fb"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="" class="btn tw"><i class="fa-brands fa-twitter"></i></a>
                         </div>
                  
                     </div>
@@ -211,7 +211,7 @@
                 </form>
             </div>
         </section>
-    </main>
+    
     <footer>
         <div class="rrss-footer">
                 <a href="" class="btn"><i class="fa-brands fa-github"></i></a>
@@ -236,7 +236,12 @@
           }
           prevScrollpos = currentScrollPos;
         }
+        function myFunction() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+        }
         </script>
+        
 </body>
 
-</html>>
+</html>

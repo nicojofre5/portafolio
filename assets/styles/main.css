@@ -10,8 +10,15 @@
     scroll-behavior: smooth;
 }
 body{
-  font-family: var(--primary-font);
+  background-color: azure;
 }
+html{
+  font-size: 62.5%;
+}
+a{
+  text-decoration: none;
+}
+
 .nav-links a{
   text-decoration: none;
   margin:2px 15px;
@@ -184,7 +191,7 @@ to {
 #sobreMi{
   min-height: 100vh;
   padding: 40px 0px;
-  background-color: azure;
+
   
 }
 .cont-btn-inicio{
@@ -225,8 +232,7 @@ fieldset{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  background-color: #ddf7f7;
-background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23077377' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+ 
 }
 .img-skill>img{
   width: 100px;
@@ -270,7 +276,31 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   text-align: start;
   margin-left: 8px;
 }
+.gh i{
+  color: #5e005c;
+}
+.fb i{
+  color: rgb(65, 65, 196);
+}
+.tw i{
+  color: #39c4e3;
+}
+.gh i:hover{
+  color:#a1099f
+}
+.fb i:hover{
+  color: #6055fab1;
+}
+.tw i:hover{
+  color: #4ec4dec6;
+}
 
+#sobreMi h2 + h3{
+  font-size: 1.7em;
+}
+#sobreMi h2, #Proyectos h2, #Contacto h2{
+  font-size: 3em;
+}
 
 /*FIN Sobre mi */
 
@@ -278,7 +308,6 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 /* Seccion proyectos */
 
 .cont-card-proyecto{
-  background-color: rgb(178, 214, 214);
   padding: 30px 0px;
 }
 .cont-img-proyecto>img{
@@ -304,6 +333,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   margin: 30px;
   display: flex;
   justify-content: center;
+  background-color: inherit;
 }
 form{
   background-color: rgb(7, 44, 79);
@@ -381,7 +411,7 @@ footer{
 #sobreMi,#Contacto,#Proyectos{
   min-height: 100vh;
   padding: 40px 0px;
-  background-color: azure;
+
   
 }
 #sobreMi>h2,#Proyectos>h2,#Contacto>h2{
@@ -391,5 +421,8 @@ footer{
   padding:20px 50px;
 }
 
-
+.dark-mode {
+  background: rgb(26, 25, 25);
+  color: white;
+}
 /* Fin multi selectores */
