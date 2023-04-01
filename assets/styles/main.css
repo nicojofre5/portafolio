@@ -1,16 +1,20 @@
 :root{
   --primary-font:'Play', sans-serif;
   --secondary-font:'Fira Mono', monospace;
+  --primary-color:rgba(190, 76, 243, 0.354);
+  --secondary-color:rgb(25, 2, 49);
 }
 *{
-    margin: 0;
-    padding: 0;
+    margin:0;
+    padding:0;
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
 body{
-  background-color: azure;
+  background-image:linear-gradient(rgba(175, 160, 198, 0.843),rgba(203, 151, 219, 0.926)), url(/assets/img/fondo.jpg);
   font-family: var(--secondary-font);
+  color: black;
+  
 }
 html{
   font-size: 62.5%;
@@ -23,7 +27,7 @@ a{
   text-decoration: none;
   margin:2px 15px;
   padding: 8px 12px;
-  color: whitesmoke;
+  color: rgb(255, 246, 246);
   font-size: 18px;
   font-family:var(--primary-font);
   border-radius: 5px;
@@ -60,9 +64,9 @@ header{
 }
 
 .nav-links>a:hover{
- background-color: #31d9ff;
- color: black;
- transition: 1.4s;
+ background-color:var(--primary-color);
+ color: white;
+ transition: 1.1s;
  border-radius:7px;
 }
 menu li:hover{
@@ -93,7 +97,7 @@ nav{
   
 }
 .menu .active{
-  color: #26c4e8;
+  color:rgb(224, 124, 255);
 
   
 }
@@ -104,15 +108,14 @@ nav{
     min-height: 100vh;
     padding: 150px 50px;
     text-align:start;
-    background-image:linear-gradient(rgba(5, 0, 61, 0.745), rgba(24, 24, 24, 0.862)),url(../img/wave.svg);
     background-size: cover;
-    color: white;
+ 
     border-bottom: 1px solid rgb(151, 151, 151);
 }
 
 .nombreTitle{
-  color: rgb(88, 90, 219);
-  -webkit-text-stroke: 0.1px rgb(158, 194, 226);
+  color:#9812b7;
+  -webkit-text-stroke: 2px rgb(129, 34, 158);
 }
 .tituloNombre{
     margin: 2px 0px 0px;
@@ -130,7 +133,7 @@ nav{
     margin-top: 250px;
     display: inline-block;
     letter-spacing: 0.38em;
-    border-right: 0.15em solid rgb(111, 168, 215);
+    border-right: 0.15em solid rgb(129, 34, 158);
     overflow: hidden;
     animation: typing 1.8s steps(30,end),blink step-end 0.5s infinite;
     
@@ -151,7 +154,7 @@ to {
     border-color: transparent;
   }
   50%{
-    border-color: rgb(111, 168, 215);
+    border-color:rgb(129, 34, 158);
   }
 }
   .btn-cv{
@@ -161,13 +164,13 @@ to {
     font-size: 2em;
     border:1px solid rgb(14, 82, 131);
     border-radius: 25px;
-    color: rgb(255, 255, 255);
+    color:rgb(252, 243, 253);
     text-decoration: none;
     font-family: sans-serif;
    
   }
   .btn-cv:hover{
-    background-color: rgb(14, 82, 131);
+    background-color:rgb(129, 34, 158);
     transition: 1.2s;
   }
   .cont-btn-cv{
@@ -391,7 +394,7 @@ form{
 
 footer{
   padding:30px;
-  margin: 0;
+
 }
 
 .copyright,.rrss-footer{
@@ -422,7 +425,8 @@ footer{
 }
 
 .dark-mode {
-  background: rgb(26, 25, 25);
+  background: var(--secondary-color);
   color: white;
+  background-image:linear-gradient(rgba(35, 13, 70, 0.939),rgba(37, 3, 47, 0.926)), url(/assets/img/fondo.jpg);
 }
 /* Fin multi selectores */

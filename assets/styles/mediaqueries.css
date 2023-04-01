@@ -1,4 +1,4 @@
-@media only screen and (max-width:700px){
+@media only screen and (min-width:200px) and (max-width:700px){
     .menu{
         position: absolute;
         display: block;
@@ -20,17 +20,15 @@
     }
     
     .tituloNombre{
-        font-size: 3.2em;
+        font-size: 3.8em;
     }
     .btn-togler{
         display:inline-block;
         background-color: transparent;
         border: 0;
         padding: 10px;
-        cursor:pointer;
-      
-      
-        
+        cursor:pointer;  
+
     }
     .btn-togler-event{
         transform: translate(-49%,12%);
@@ -47,12 +45,12 @@
         
     }
     #Inicio>.subTitulo{
-        margin-top: 300px;
-        font-size: 1.5em;
+        margin-top: 360px;
+        font-size: 2.0em;
         letter-spacing: 0.10em;
         border-right: 0.15em solid rgb(111, 168, 215);
         overflow: hidden;
-        animation: typing 2.2s steps(30,end),blink step-end 0.5s infinite;
+        animation: typing 1.8s steps(30,end),blink step-end 0.5s infinite;
         
     }
     /* animacion texto */
@@ -61,7 +59,7 @@
         width: 0%;
           } 
     to {
-        width: 52%;
+        width: 41%;
       }
     }
     /* animacion cursor */
@@ -71,7 +69,15 @@
         border-color: transparent;
       }
       50%{
-        border-color: rgb(111, 168, 215);
+        border-color:rgb(129, 34, 158);
+      }
+    }
+    @keyframes entradaTituloInicial {
+      from{
+        transform: translateX(6%);
+      }
+      to{
+        transform: translateX(0%);
       }
     }
 
@@ -95,7 +101,7 @@
            border-color: transparent;
          }
          50%{
-           border-color: rgb(111, 168, 215);
+           border-color: rgb(129, 34, 158);
          }
        }
 }
