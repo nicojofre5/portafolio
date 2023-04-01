@@ -1,7 +1,6 @@
 :root{
   --primary-font:'Play', sans-serif;
   --secondary-font:'Fira Mono', monospace;
-
 }
 *{
     margin: 0;
@@ -11,6 +10,7 @@
 }
 body{
   background-color: azure;
+  font-family: var(--secondary-font);
 }
 html{
   font-size: 62.5%;
@@ -94,7 +94,7 @@ nav{
 }
 .menu .active{
   color: #26c4e8;
-  border-top: 1px solid #26c4e8;
+
   
 }
 /*Fin header */
@@ -102,7 +102,7 @@ nav{
 /* Inicio */
 #Inicio{
     min-height: 100vh;
-    padding: 90px 50px;
+    padding: 150px 50px;
     text-align:start;
     background-image:linear-gradient(rgba(5, 0, 61, 0.745), rgba(24, 24, 24, 0.862)),url(/assets/img/wave.svg);
     background-size: cover;
@@ -116,7 +116,8 @@ nav{
 }
 .tituloNombre{
     margin: 2px 0px 0px;
-    font-size: 4.70em;
+    font-size: 6.40em;
+    display: inline-block;
     font-family: 'Play', sans-serif; 
     animation-name: entradaTituloInicial;
     animation-duration: 1.10s;
@@ -124,14 +125,14 @@ nav{
 
 }
 #Inicio>.subTitulo{
-    font-size: 2.0em;
+    font-size: 3.6em;
     font-family:monospace;
     margin-top: 200px;
     display: inline-block;
-    letter-spacing: 0.10em;
+    letter-spacing: 0.38em;
     border-right: 0.15em solid rgb(111, 168, 215);
     overflow: hidden;
-    animation: typing 2.8s steps(30,end),blink step-end 0.5s infinite;
+    animation: typing 1.8s steps(30,end),blink step-end 0.5s infinite;
     
 }
 /* animacion texto */
@@ -140,7 +141,7 @@ nav{
     width: 0%;
       } 
 to {
-    width:25%;
+    width:28%;
   }
 }
 /* animacion cursor */
@@ -157,7 +158,7 @@ to {
     background-color: transparent;
     padding: 15px;
     margin: 0;
-    font-size: 1.2em;
+    font-size: 2em;
     border:1px solid rgb(14, 82, 131);
     border-radius: 25px;
     color: rgb(255, 255, 255);
@@ -172,14 +173,12 @@ to {
   .cont-btn-cv{
     padding:25px 0px 0px;
   }
-  .btn>i{
-    padding: 4px;
-  }
+ 
 /*Fin inicio */
 
 @keyframes entradaTituloInicial {
   from{
-    transform: translateX(4%);
+    transform: translateX(20%);
   }
   to{
     transform: translateX(0%);
@@ -195,7 +194,7 @@ to {
   
 }
 .cont-btn-inicio{
-    margin: 16px;
+    margin:30px 16px 0px;
   
 }
 .cont-btn-inicio>.btn{
@@ -204,14 +203,17 @@ to {
     color:rgb(255, 255, 255);
     text-decoration: none;
     font-family:Arial, Helvetica, sans-serif;
-    font-size: 19px;
+  
     -webkit-text-stroke: 1px rgba(0, 0, 0, 0.562);
   }
   .cont-btn-inicio>.btn:hover{
     color: black;
     transition: 1.2s;
-
   }
+.btn>i{
+  font-size: 3.6em;
+}
+
 
 
 .img-perfil>img{
@@ -391,9 +393,7 @@ footer{
   padding:30px;
   margin: 0;
 }
-.btn>.fa-brands{
-  font-size: 24px;
-}
+
 .copyright,.rrss-footer{
   text-align: center;
   margin: 16px;

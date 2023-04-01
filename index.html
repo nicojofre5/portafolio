@@ -20,7 +20,7 @@
         <nav class="menu-bar">
             <div>
                 <picture>
-                   <img class="logo-portafolio" src="assets/img/logo_portfolio.png"  alt="Logo - Nicolas Jofre">
+                   <a href=""><img class="logo-portafolio" src="assets/img/logo_portfolio.png"  alt="Logo - Nicolas Jofre"></a>
                 </picture>
             </div>
 
@@ -33,7 +33,7 @@
                 </ul>                
             </div>
             <div class="">
-                <button class="btn-darkmode" onclick="myFunction()"><i class="fa-solid fa-circle-half-stroke"></i></button>
+                <button class="btn-darkmode" onclick="myFunction()" id="moonBtn"><i class="fa-solid fa-circle-half-stroke"></i></button>
                 <button class="btn-togler" id="btn-toggle"><i class="fa-solid fa-bars"></i></button>
             </div>
                  
@@ -41,7 +41,7 @@
         </nav>
     </header>
 
-   
+    <main>
         <section id="Inicio">
             <h3 class="subTitulo">Desarrollador</h3>
             <div>
@@ -211,7 +211,7 @@
                 </form>
             </div>
         </section>
-    
+    </main>
     <footer>
         <div class="rrss-footer">
                 <a href="" class="btn"><i class="fa-brands fa-github"></i></a>
@@ -225,8 +225,23 @@
 
     <script src="https://kit.fontawesome.com/63586a8960.js" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
-
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+          if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0";
+          } else {
+            document.getElementById("navbar").style.top = "-90px";
+          }
+          prevScrollpos = currentScrollPos;
+        }
+        function myFunction() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+        }
+        </script>
         
 </body>
 
-</html>
+</html>>

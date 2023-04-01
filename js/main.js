@@ -4,6 +4,8 @@ let link = menu_container.getElementsByClassName("link");
 let menu_bar = document.querySelector('#btn-toggle');
 var prevScrollpos = window.pageYOffset;
 
+
+
 window.onscroll = function() {
     var currentScrollPos = window.pageYOffset;
       if (prevScrollpos > currentScrollPos) {
@@ -13,7 +15,10 @@ window.onscroll = function() {
       }
       prevScrollpos = currentScrollPos;
     }
-    
+    function myFunction() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+    }
 
 for(var i=0;i<link.length;i++){
     link[i].addEventListener("click",function(){
@@ -22,11 +27,10 @@ for(var i=0;i<link.length;i++){
         this.className +=" active";
     });
 }
+
     menu_bar.addEventListener('click',function(){
         menu.classList.toggle('btn-togler-event')
     });
 
-    function myFunction() {
-        var element = document.body;
-        element.classList.toggle("dark-mode");
-        }
+    var col=document.getElementById("moonBtn");
+    col.style.color="red";
