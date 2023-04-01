@@ -51,7 +51,7 @@ font-family: 'Play', sans-serif; */
 /* header */
 header{
     padding: 3px 5px;
-    background-color:rgba(24, 24, 24, 0.392);
+    background-color:rgba(24, 24, 24, 0.528);
     box-shadow:6px 5px 22px 10px rgba(24, 24, 24, 0.6);
     position:fixed;
     width: 100%;
@@ -248,19 +248,22 @@ fieldset{
   display: flex;
   justify-content: center;
   flex-wrap:wrap;
-  column-gap: 4px;
+  gap:20px;
 }
 
 .card{
-  border: 5px solid #af0bac;
+  background-image: radial-gradient(circle at 50% 27.76%, #d69dd6 0, #d669e0 16.67%, #d294da 33.33%, #b53cf2 50%, #6524b6 66.67%, #5c42cf 83.33%, #002db2 100%);
   border-radius: 100%;
-  margin: 2px;
-  padding: 5px;
+  border: 1px solid rgb(129, 34, 158);
+  margin: 20px 0px;
+  padding: 14px;
+  box-shadow: 4px 3px 12px rgba(0, 0, 0, 0.607);
 
 }
 .img-skill>figcaption{
   text-align: center;
-  font-size: 14px;
+  font-size: 1.3em;
+  color: white;
 }
 .datos-skill{
   display: block;

@@ -31,8 +31,8 @@
 
     }
     .btn-togler-event{
-        transform: translate(-49%,12%);
-        background-color: transparent;
+        transform: translate(-48%,12%);
+        background-color:rgba(24, 24, 24, 0.24);
         transition: all 1s;
   
 
