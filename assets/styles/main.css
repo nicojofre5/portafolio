@@ -222,7 +222,7 @@ to {
 .img-perfil>img{
   width: 200px;
   border-radius: 100%;
-  border: 1px solid grey;
+  border: 1px solid rgb(152, 106, 170);
   margin: 2px auto;
 }
 .img-perfil{
@@ -267,10 +267,11 @@ fieldset{
   padding: 9px 1px;
 }
 .cont-perfil>h5,.cont-skill>h5{
-  padding:10px 4px 40px;
+  padding:10px 4px;
   text-align:center;
-  margin: 10px;
-  font-size: 20px;
+  margin: 65px 0px;
+  font-size: 2.6em;
+  font-family: var(--primary-font);
 }
 
 .cont-info{
@@ -279,32 +280,62 @@ fieldset{
 }
 .cont-info fieldset label{
   text-align: start;
-  margin-left: 8px;
+  font-size: 2em;
+  font-family: var(--primary-font);
+  font-weight: bold;
 }
 .gh i{
-  color: #5e005c;
+  color: #dfdadf;
 }
 .fb i{
   color: rgb(65, 65, 196);
 }
 .tw i{
-  color: #39c4e3;
+  color: #2ecbee;
 }
 .gh i:hover{
-  color:#a1099f
+  color:#9c989c
 }
 .fb i:hover{
   color: #6055fab1;
 }
 .tw i:hover{
-  color: #4ec4dec6;
+  color: #24b4d4c6;
+}
+i:hover{
+  transition: 1.5s;
 }
 
 #sobreMi h2 + h3{
   font-size: 1.7em;
+  font-weight: 100;
 }
 #sobreMi h2, #Proyectos h2, #Contacto h2{
   font-size: 3em;
+  font-family: var(--primary-font);
+}
+
+#sobreMi h3>a{
+  color: rgba(172, 37, 190, 0.777);
+  font-size:2.0rem;
+  font-weight: bold;
+
+}
+#sobreMi h3>a:hover{
+  color: rgb(240, 80, 219);
+  border-radius: 8px;
+  transition: 1.5s;
+}
+
+.fieldset-perfil>input[type="text"],.fieldset-perfil>input[type="email"]{
+  font-size: 1.8em;
+  font-family: var(--secondary-font);
+  min-width: 270px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgb(170, 70, 207);
+  color:inherit;
+  margin: 8px 0px;
 }
 
 /*FIN Sobre mi */
