@@ -104,7 +104,7 @@ nav{
     min-height: 100vh;
     padding: 150px 50px;
     text-align:start;
-    background-image:linear-gradient(rgba(5, 0, 61, 0.745), rgba(24, 24, 24, 0.862)),url(/assets/img/wave.svg);
+    background-image:linear-gradient(rgba(5, 0, 61, 0.745), rgba(24, 24, 24, 0.862)),url(../img/wave.svg);
     background-size: cover;
     color: white;
     border-bottom: 1px solid rgb(151, 151, 151);
@@ -127,7 +127,7 @@ nav{
 #Inicio>.subTitulo{
     font-size: 3.6em;
     font-family:monospace;
-    margin-top: 200px;
+    margin-top: 250px;
     display: inline-block;
     letter-spacing: 0.38em;
     border-right: 0.15em solid rgb(111, 168, 215);
@@ -141,7 +141,7 @@ nav{
     width: 0%;
       } 
 to {
-    width:28%;
+    width:20%;
   }
 }
 /* animacion cursor */
