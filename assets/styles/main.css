@@ -106,7 +106,7 @@ nav{
 /* Inicio */
 #Inicio{
     min-height: 100vh;
-    padding: 150px 50px;
+    padding: 60px 50px;
     text-align:start;
     background-size: cover;
  
@@ -181,7 +181,7 @@ to {
 
 @keyframes entradaTituloInicial {
   from{
-    transform: translateX(20%);
+    transform: translateX(12%);
   }
   to{
     transform: translateX(0%);
@@ -252,18 +252,21 @@ fieldset{
 }
 
 .card{
-  background-image: radial-gradient(circle at 50% 27.76%, #d69dd6 0, #d669e0 16.67%, #d294da 33.33%, #b53cf2 50%, #6524b6 66.67%, #5c42cf 83.33%, #002db2 100%);
-  border-radius: 100%;
-  border: 1px solid rgb(129, 34, 158);
+
+  border: 5px solid rgb(103, 19, 129);
+  background-color: rgba(129, 34, 158, 0.401);
+  border-radius: 89px;
   margin: 20px 0px;
-  padding: 14px;
+  padding: 8px;
   box-shadow: 4px 3px 12px rgba(0, 0, 0, 0.607);
 
 }
 .img-skill>figcaption{
   text-align: center;
-  font-size: 1.3em;
-  color: white;
+  font-size: 1.2em;
+  color: rgb(244, 218, 241);
+  padding: 4px;
+  font-weight: bold;
 }
 .datos-skill{
   display: block;
@@ -319,14 +322,15 @@ i:hover{
 }
 
 #sobreMi h3>a{
-  color: rgba(172, 37, 190, 0.777);
+  color: rgba(255, 252, 255, 0.777);
   font-size:2.0rem;
   font-weight: bold;
-
+  -webkit-text-stroke: 0.5px black;
 }
 #sobreMi h3>a:hover{
-  color: rgb(240, 80, 219);
+  color: rgb(81, 19, 73);
   border-radius: 8px;
+  
   transition: 1.5s;
 }
 
@@ -336,11 +340,15 @@ i:hover{
   min-width: 270px;
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid rgb(170, 70, 207);
+  border-bottom: 2px solid rgb(170, 70, 207);
   color:inherit;
   margin: 8px 0px;
+
 }
 
+.fieldset-perfil{
+  margin: 15px 0px;
+}
 /*FIN Sobre mi */
 
 
