@@ -240,24 +240,24 @@ fieldset{
  
 }
 .img-skill>img{
-  width: 100px;
-  height:85px;
+  width: 80px;
+  height:80px;
   padding: 10px;
 }
 .fila{
   display: flex;
   justify-content: center;
   flex-wrap:wrap;
-  gap:20px;
+  gap:10px;
 }
 
 .card{
 
   border: 5px solid rgb(103, 19, 129);
   background-color: rgba(129, 34, 158, 0.401);
-  border-radius: 89px;
-  margin: 20px 0px;
-  padding: 8px;
+  border-radius: 100%;
+  margin: 10px;
+  padding: 4px 18px;
   box-shadow: 4px 3px 12px rgba(0, 0, 0, 0.607);
 
 }
