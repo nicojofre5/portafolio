@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bona+Nova&family=Fira+Mono&family=Graduate&family=Martian+Mono:wght@100&family=Play&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://kit.fontawesome.com/63586a8960.css" crossorigin="anonymous">
+    <script src="js/jquery-3.6.4.min.js" type="text/javascript"></script>
     <link rel="stylesheet" href="assets/styles/mediaqueries.css">
     <link rel="shortcut icon" href="assets/img/logo_portfolio.png" type="image/x-icon">
     <title>Portfolio | Nicolas Jofre</title>
@@ -157,19 +158,19 @@
                 <div class="row">
                     <div class="card-proyecto">
                         <figure class="cont-img-proyecto">
-                            <img src="assets/img/project1.png" alt="" height="240px">
+                            <img src="assets/img/project1.png" alt="" height="240px" onclick="">
                         </figure>
                         <div class="card-body">
-                            <h3><a href="">Rotiseria Nico</a></h3>
+                            <h3><a href="https://nicojofre5.github.io/RotNico/" target="_blank">Rotiseria Nico</a></h3>
                         </div>  
                        
                     </div>
                     <div class="card-proyecto">
                         <figure class="cont-img-proyecto">
-                            <img src="https://image.winudf.com/v2/image/bXBsLmNvbS5jb21pbmdzb29uX3NjcmVlbl8wXzE1MzQ3NTgxODFfMDQ0/screen-0.jpg?fakeurl=1&type=.webp" alt="">
+                            <img src="assets/img/project2.png" alt="" >
                         </figure>
                         <div class="card-body">
-                            
+                            <h3><a href="https://nicojofre5.github.io/webProjectPortafolio/" target="_blank">Dani Rivero</a></h3>
                         </div>
                     </div>
                     <div class="card-proyecto">
@@ -263,22 +264,8 @@
 
     <script src="https://kit.fontawesome.com/63586a8960.js" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
-    <script>
-        var prevScrollpos = window.pageYOffset;
-        window.onscroll = function() {
-        var currentScrollPos = window.pageYOffset;
-          if (prevScrollpos > currentScrollPos) {
-            document.getElementById("navbar").style.top = "0";
-          } else {
-            document.getElementById("navbar").style.top = "-90px";
-          }
-          prevScrollpos = currentScrollPos;
-        }
-        function myFunction() {
-        var element = document.body;
-        element.classList.toggle("dark-mode");
-        }
-        </script>
+
+
         
 </body>
 

@@ -277,7 +277,7 @@ fieldset{
   padding:10px 4px;
   text-align:center;
   margin: 65px 0px;
-  font-size: 2.6em;
+  font-size: 2.4em;
   font-family: var(--primary-font);
 }
 
@@ -356,12 +356,17 @@ i:hover{
 
 /* Seccion proyectos */
 
+#Proyectos h3{
+  font-size: 1.8em;
+  font-weight: 200;
+}
 .cont-card-proyecto{
   padding: 30px 0px;
+  margin: 80px 0px;
 }
 .cont-img-proyecto>img{
-  width: 600px;
-  height: 350px;
+  width: 300px;
+  height: 180px;
   border-radius: 7px;
   border: 1px solid grey;
 }
@@ -375,6 +380,14 @@ i:hover{
   flex-wrap: wrap;
   column-gap: 5px;
 }
+.card-body h3>a{
+  color: white;
+  padding:0px 26px;
+}
+.card-body h3>a:hover{
+  color: #f7dafd;
+}
+
 
 /* Fin seccion  proyectos */
 
@@ -464,6 +477,7 @@ footer{
 }
 #sobreMi>h2,#Proyectos>h2,#Contacto>h2{
   padding: 60px 47px 20px;
+  font-size: 3.5em;
 }
 #sobreMi>h3,#Proyectos>h3{
   padding:20px 50px;
