@@ -360,6 +360,12 @@ i:hover{
   font-size: 1.8em;
   font-weight: 200;
 }
+.card-proyecto{
+  background-color: #2c09346a;
+  margin: 24px 20px;
+  border-radius: 25px;
+  border:3px solid rgb(106, 2, 106)
+}
 .cont-card-proyecto{
   padding: 30px 0px;
   margin: 80px 0px;
@@ -370,6 +376,7 @@ i:hover{
   border-radius: 7px;
   border: 1px solid grey;
 }
+
 .cont-img-proyecto{
   padding: 24px;
     
@@ -382,7 +389,8 @@ i:hover{
 }
 .card-body h3>a{
   color: white;
-  padding:0px 26px;
+  display: inline-block;
+  padding:15px 26px;
 }
 .card-body h3>a:hover{
   color: #f7dafd;
@@ -399,7 +407,7 @@ i:hover{
   background-color: inherit;
 }
 form{
-  background-color: rgb(7, 44, 79);
+  background: linear-gradient(rgba(115, 6, 113, 0.904),rgba(18, 1, 78, 0.402));
   padding:100px;
   margin-top: 80px;
   border-radius: 20px;
@@ -421,26 +429,29 @@ form{
   padding: 5px;
   width: 100%;
   margin: 10px 0px;
-  background-color: rgb(8, 126, 25);
+  background-color: rgb(42, 10, 81);
   color: white;
   cursor: pointer;
+  border:1px solid rgb(244, 213, 248);
+  font-size: 1.5em;
 }
 .sep-contacto>input{
   background-color: transparent;
-  border: 2px solid #31d9ff;
+  border: 2px solid #fbf2fb;
   color:#eee;
-  height: 2em;
+  height: 20px;
   padding: 25px 6px;
-  font-size: 1em;
+  font-size: 1.4em;
+ 
 }
 
 .sep-contacto label{
   display: block;
   opacity: 1;
   transition: all 0.3s;
-  font-size: 1.0em;
+  font-size: 1.8em;
   color:rgb(234, 232, 232);
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: var(--primary-font);
   padding: 10px 2px;
 }
 
