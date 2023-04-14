@@ -118,10 +118,10 @@ nav{
   -webkit-text-stroke: 2px rgb(129, 34, 158);
 }
 .tituloNombre{
-    margin: 2px 0px 0px;
+    margin: 8px 0px 0px;
     font-size: 6.40em;
     display: inline-block;
-    font-family: 'Play', sans-serif; 
+    font-family: var(--primary-font); 
     animation-name: entradaTituloInicial;
     animation-duration: 1.10s;
     animation-timing-function: linear;
@@ -130,7 +130,7 @@ nav{
 #Inicio>.subTitulo{
     font-size: 3.6em;
     font-family:monospace;
-    margin-top: 250px;
+    margin-top: 300px;
     display: inline-block;
     letter-spacing: 0.38em;
     border-right: 0.15em solid rgb(129, 34, 158);
@@ -299,7 +299,7 @@ fieldset{
   color: rgb(65, 65, 196);
 }
 .tw i{
-  color: #2ecbee;
+  color: #00acee;
 }
 .gh i:hover{
   color:#9c989c
@@ -308,7 +308,7 @@ fieldset{
   color: #6055fab1;
 }
 .tw i:hover{
-  color: #24b4d4c6;
+  color: #1292afc6;
 }
 i:hover{
   transition: 1.5s;
@@ -406,11 +406,13 @@ i:hover{
   justify-content: center;
   background-color: inherit;
 }
+
 form{
-  background: linear-gradient(rgba(115, 6, 113, 0.904),rgba(18, 1, 78, 0.402));
+  background: linear-gradient(rgba(90, 4, 89, 0.904),rgba(18, 1, 78, 0.402));
   padding:100px;
   margin-top: 80px;
   border-radius: 20px;
+  border:1px solid white
 
 }
 .sep-contacto{
@@ -420,15 +422,17 @@ form{
   display: block;
   width: 100%;
   resize: none;
+  font-size: 1.9em;
 }
 
 .cont-btn-enviar{
   text-align: center;
+  margin: 10px 0px 0px;
 }
 .cont-btn-enviar>button{
   padding: 5px;
   width: 100%;
-  margin: 10px 0px;
+  margin: 26px 0px 0px;
   background-color: rgb(42, 10, 81);
   color: white;
   cursor: pointer;
@@ -443,6 +447,10 @@ form{
   padding: 25px 6px;
   font-size: 1.4em;
  
+}
+.sep-contacto>input:focus{
+  outline: none;
+  border: 1px solid rgb(152, 94, 172);
 }
 
 .sep-contacto label{
@@ -463,19 +471,31 @@ form{
 
 footer{
   padding:30px;
-
 }
 
 .copyright,.rrss-footer{
   text-align: center;
   margin: 16px;
 }
+.rrss-footer{
+  padding: 25px;
+
+}
+.rrss-footer a>i{
+  margin: 10px 10px;
+  -webkit-text-stroke: 1px black;
+  border-radius:10px;
+  padding: 7px;
+  font-size: 3.9rem;
+}
 .copyright>h5{
-  font-size: 15px;
+  font-size: 1.6em;
 }
 .footer-user{
   text-decoration:none;
+  color: white;
 }
+
 /* Fin de footer  */
 
 
