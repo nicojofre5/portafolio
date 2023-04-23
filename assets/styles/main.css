@@ -356,16 +356,12 @@ i:hover{
 
 /* Seccion proyectos */
 
-#Proyectos h3{
-  font-size: 1.8em;
-  font-weight: 200;
-}
 .card-proyecto{
-  background-color: #2c09346a;
+  background-color: #440f4f1b;
   display: flex;
   flex-wrap: wrap;
-  border-radius: 25px;
-  border:3px solid rgb(106, 2, 106)
+  border-radius: 5px;
+ 
 }
 .cont-card-proyecto{
   padding: 30px 0px;
@@ -390,15 +386,16 @@ i:hover{
   padding: 0px 20px;
   justify-content: center;
 }
-.card-body h3>a{
-  color: white;
-  display: inline-block;
-  padding:15px 26px;
+.cont-label-project p{
+display: inline-block;
+  padding: 12px 0px;
 }
-.card-body h3>a:hover{
-  color: #f7dafd;
+.card-body{
+    padding: 0px 30px;
 }
-
+.card-body h3{
+ font-size: 1.7em;
+}
 
 /* Fin seccion  proyectos */
 
@@ -517,8 +514,8 @@ footer{
   padding: 60px 15px 20px;
   font-size: 3.5em;
 }
-#sobreMi>h3,#Proyectos>h3{
-  padding:20px 50px;
+#sobreMi>h3{
+  padding:20px 17px;
 }
 
 .dark-mode {
