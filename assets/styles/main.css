@@ -228,9 +228,8 @@ to {
   margin: 2px auto;
 }
 .img-perfil{
-  width: 200px;
-  margin: 0 auto;
-  
+  display: flex;
+  justify-content: center;  
 }
 fieldset{
   border: none;
@@ -363,13 +362,14 @@ i:hover{
 }
 .card-proyecto{
   background-color: #2c09346a;
-
+  display: flex;
+  flex-wrap: wrap;
   border-radius: 25px;
   border:3px solid rgb(106, 2, 106)
 }
 .cont-card-proyecto{
   padding: 30px 0px;
-  margin: 80px 0px;
+  margin: 10px 0px;
 }
 .cont-img-proyecto>img{
   width: 300px;
@@ -383,13 +383,12 @@ i:hover{
     
 }
 .row{
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, max-content));
-  justify-content: center;
-  gap: 25px;
-
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
   flex-wrap: wrap;
-  
+  padding: 0px 20px;
+  justify-content: center;
 }
 .card-body h3>a{
   color: white;
@@ -515,7 +514,7 @@ footer{
   
 }
 #sobreMi>h2,#Proyectos>h2,#Contacto>h2{
-  padding: 60px 47px 20px;
+  padding: 60px 15px 20px;
   font-size: 3.5em;
 }
 #sobreMi>h3,#Proyectos>h3{
