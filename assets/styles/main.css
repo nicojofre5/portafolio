@@ -431,7 +431,7 @@ i:hover{
 }
 
 form{
-  padding:100px;
+  padding:40px;
   background-color: transparent;
 
 
@@ -500,23 +500,27 @@ footer{
   padding:30px;
 }
 
-.copyright,.rrss-footer{
+.copyright{
   text-align: center;
   margin: 16px;
 }
-.rrss-footer{
-  padding: 25px;
+.cont-redes-project{
+  padding: 50px 25px 0px;
+  justify-self: center;
 
 }
-.rrss-footer a>i{
- 
+.cont-redes-project a>i{
   border: 1px solid rgba(103, 19, 129, 0.196);
-  background-color: rgb(199, 139, 205);
   border-radius:100%;
-  padding: 10px;
-  font-size: 2.6rem;
+  padding: 15px;
+  font-size: 2.4rem;
+  
 }
-.rrss-footer a{
+.flex-redes{
+  display: flex;
+  justify-content: center;
+}
+.cont-redes-project a{
   margin: 10px 10px;
 }
 .copyright>h5{
@@ -524,7 +528,17 @@ footer{
 }
 .footer-user{
   text-decoration:none;
-  color: white;
+  color:blueviolet;
+}
+.cont-redes-project h3{
+  font-size: 1.8em;
+  padding: 16px 0px 5px;
+}
+.cont-redes-project h4{
+  font-size: 1.4em;
+  font-weight:300;
+  padding: 6px 0px;
+
 }
 
 /* Fin de footer  */
