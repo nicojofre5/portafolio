@@ -42,12 +42,7 @@ ul{
   display:flex;
   justify-content: space-around;
 }
-/* Cambio de fuentes  */
-/* font-family: 'Bona Nova', serif;
-font-family: 'Fira Mono', monospace;
-font-family: 'Graduate', cursive;
-font-family: 'Martian Mono', monospace;
-font-family: 'Play', sans-serif; */
+
 /* header */
 header{
     padding: 3px 5px;
@@ -133,7 +128,7 @@ nav{
     margin-top: 220px;
     display: inline-block;
     letter-spacing: 0.38em;
-    border-right: 0.15em solid rgb(129, 34, 158);
+    border-right: 0.10em solid rgb(129, 34, 158);
     overflow: hidden;
     animation: typing 1.8s steps(30,end),blink step-end 0.5s infinite;
     
@@ -242,7 +237,7 @@ fieldset{
 }
 .img-skill>img{
   width: 80px;
-  height:80px;
+  height:75px;
   padding: 10px;
 }
 .fila{
@@ -384,17 +379,45 @@ i:hover{
   flex-direction: column;
   flex-wrap: wrap;
   padding: 0px 20px;
-  justify-content: center;
+
 }
 .cont-label-project p{
-display: inline-block;
-  padding: 12px 0px;
+  display: inline-block;
+  padding: 4px 5px;
+  margin: 12px 4px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  border: 1px solid var(--primary-color);
+  background-color:rgba(103, 19, 129, 0.221);
+  cursor:default;
+
+}
+.cont-button-project a{
+  border:1px solid rgb(103, 19, 129);
+  padding: 5px 16px;
+  display: inline-block;
+  border-radius: 15px;
+  margin:8px 1px 25px;
+  font-size: 1.4rem;
+  font-weight: bold;
 }
 .card-body{
     padding: 0px 30px;
+    align-self: center;
 }
 .card-body h3{
- font-size: 1.7em;
+ font-size: 2.2em;  
+}
+.card-body h5{
+  font-size: 1.3rem;
+  font-weight: 200;
+}
+.sub_title{
+  padding: 0px 17px;
+  font-size: 1.5em;
+}
+.cont-button-project a{
+  color: inherit;
 }
 
 /* Fin seccion  proyectos */
@@ -408,11 +431,10 @@ display: inline-block;
 }
 
 form{
-  background: linear-gradient(rgba(90, 4, 89, 0.904),rgba(18, 1, 78, 0.402));
   padding:100px;
-  margin-top: 80px;
-  border-radius: 20px;
-  border:1px solid white
+  background-color: transparent;
+
+
 
 }
 .sep-contacto{
@@ -461,6 +483,11 @@ form{
   color:rgb(234, 232, 232);
   font-family: var(--primary-font);
   padding: 10px 2px;
+}
+.div-section-contact{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 /* Fin seccion contacto  */
@@ -522,5 +549,5 @@ footer{
   background: var(--secondary-color);
   color: white;
   background-image:linear-gradient(rgba(35, 13, 70, 0.939),rgba(37, 3, 47, 0.926)), url(/assets/img/fondo.jpg);
-}
+} 
 /* Fin multi selectores */

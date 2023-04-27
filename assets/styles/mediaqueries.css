@@ -1,108 +1,119 @@
-@media only screen and (min-width:200px) and (max-width:700px){
-    .menu{
-        position: absolute;
-        display: block;
-        min-height: 30vh;
-        text-align: center;
-        transform: translateX(120%);      
-        padding: 80px;
-        width: 700px;
-        margin-top: 12px;
-    
-        
-    }
-    .nav-links{
-        padding:5px 20px;
-    }
-    #Inicio{
-        padding: 0px 20px;
+@media only screen and (min-width: 200px) and (max-width: 700px) {
+  .menu {
+    position: absolute;
+    display: block;
+    min-height: 30vh;
+    text-align: center;
+    transform: translateX(120%);
+    padding: 80px;
+    width: 700px;
+    margin-top: 12px;
+  }
+  .img-skill > img {
+    width: 120px;
+    height: 100px;
+  }
+  .card-proyecto {
+    justify-content: center;
+  }
+  .nav-links {
+    padding: 5px 20px;
+  }
+  #Inicio {
+    padding: 0px 20px;
+  }
 
+  .tituloNombre {
+    font-size: 5em;
+  }
+  .btn-togler {
+    display: inline-block;
+    background-color: transparent;
+    border: 0;
+    padding: 10px;
+    cursor: pointer;
+  }
+  .btn-togler-event {
+    transform: translate(-48%, 12%);
+    background-color: rgba(24, 24, 24, 0.24);
+    transition: all 1s;
+  }
+  .btn-togler > i {
+    font-size: 2.75em;
+    color: whitesmoke;
+    padding: 5px;
+  }
+  #Inicio > .subTitulo {
+    margin-top: 330px;
+    font-size: 2em;
+    letter-spacing: 0.1em;
+    border-right: 0.15em solid rgb(111, 168, 215);
+    overflow: hidden;
+    animation: typing 1.8s steps(30, end), blink step-end 0.5s infinite;
+  }
+  /* animacion texto */
+  @keyframes typing {
+    from {
+      width: 0%;
     }
-    
-    .tituloNombre{
-        font-size: 5em;
-    }
-    .btn-togler{
-        display:inline-block;
-        background-color: transparent;
-        border: 0;
-        padding: 10px;
-        cursor:pointer;  
-
-    }
-    .btn-togler-event{
-        transform: translate(-48%,12%);
-        background-color:rgba(24, 24, 24, 0.24);
-        transition: all 1s;
-  
-
-    }
-    .btn-togler>i{
-        font-size: 2.75em;
-        color: whitesmoke;
-        padding: 5px;
-        
-        
-    }
-    #Inicio>.subTitulo{
-        margin-top: 360px;
-        font-size: 2.0em;
-        letter-spacing: 0.10em;
-        border-right: 0.15em solid rgb(111, 168, 215);
-        overflow: hidden;
-        animation: typing 1.8s steps(30,end),blink step-end 0.5s infinite;
-        
-    }
-    /* animacion texto */
-    @keyframes typing {
-     from {
-        width: 0%;
-          } 
     to {
-        width: 41%;
-      }
+      width: 44%;
     }
-    /* animacion cursor */
-    
-    @keyframes blink {
-      from,to{
-        border-color: transparent;
-      }
-      50%{
-        border-color:rgb(129, 34, 158);
-      }
-    }
-    @keyframes entradaTituloInicial {
-      from{
-        transform: translateX(6%);
-      }
-      to{
-        transform: translateX(0%);
-      }
-    }
+  }
+  /* animacion cursor */
 
-}
-@media only screen and (min-width:702px) and (max-width:1280px) {
-    #Inicio>.subTitulo{
-        animation: typing 1.2s steps(30,end),blink step-end 0.5s infinite;
+  @keyframes blink {
+    from,
+    to {
+      border-color: transparent;
     }
-    @keyframes typing {
-        from {
-           width: 0%;
-             } 
-       to {
-           width:38%;
-         }
-       }
-       /* animacion cursor */
-       
-       @keyframes blink {
-         from,to{
-           border-color: transparent;
-         }
-         50%{
-           border-color: rgb(129, 34, 158);
-         }
-       }
+    50% {
+      border-color: rgb(129, 34, 158);
+    }
+  }
+  @keyframes entradaTituloInicial {
+    from {
+      transform: translateX(6%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+  }
 }
+@media only screen and (min-width: 702px) and (max-width: 1280px) {
+  #Inicio > .subTitulo {
+    animation: typing 1.2s steps(30, end), blink step-end 0.5s infinite;
+  }
+  .card-proyecto {
+    justify-content: center;
+  }
+  @keyframes typing {
+    from {
+      width: 0%;
+    }
+    to {
+      width: 38%;
+    }
+  }
+  /* animacion cursor */
 
+  @keyframes blink {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: rgb(129, 34, 158);
+    }
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .card-body {
+    padding: 20px 36px 0px;
+  }
+
+  .cont-button-project a:hover{
+    background-color: rgba(129, 34, 158, 0.425);
+    transition: 1.2s;
+  }
+}
