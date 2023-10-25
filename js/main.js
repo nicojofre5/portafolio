@@ -18,7 +18,25 @@ window.onscroll = function() {
     function myFunction() {
     var element = document.body;
     element.classList.toggle("dark-mode");
+
+    if(document.body.classList.contains('dark-mode')){
+      localStorage.setItem('modo-oscuro','true');
     }
+    else{
+      localStorage.setItem('modo-oscuro','false');
+    }
+    };
+    if(localStorage.getItem('modo-oscuro') === 'true'){
+      document.body.classList.add('dark-mode');
+    }
+    else{
+      document.body.classList.remove('dark-mode');
+    }
+
+
+    
+
+
 
 for(var i=0;i<link.length;i++){
     link[i].addEventListener("click",function(){
@@ -31,6 +49,3 @@ for(var i=0;i<link.length;i++){
     menu_bar.addEventListener('click',function(){
         menu.classList.toggle('btn-togler-event')
     });
-
-    var col=document.getElementById("moonBtn");
-    col.style.color="red";
