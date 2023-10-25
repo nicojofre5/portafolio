@@ -1,326 +1,408 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/styles/main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova&family=Fira+Mono&family=Graduate&family=Martian+Mono:wght@100&family=Play&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://kit.fontawesome.com/63586a8960.css" crossorigin="anonymous">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/styles/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bona+Nova&family=Fira+Mono&family=Graduate&family=Martian+Mono:wght@100&family=Play&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://kit.fontawesome.com/63586a8960.css"
+      crossorigin="anonymous"
+    />
     <script src="js/jquery-3.6.4.min.js" type="text/javascript"></script>
-    <link rel="stylesheet" href="assets/styles/mediaqueries.css">
-    <link rel="shortcut icon" href="assets/img/logo_portfolio.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/styles/mediaqueries.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/img/logo_portfolio.png"
+      type="image/x-icon"
+    />
     <title>Nicolas Jofre | Portafolio</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header id="navbar">
-        <nav class="menu-bar">
-            <div>
-                <picture>
-                   <a href=""><img class="logo-portafolio" src="assets/img/logo_portfolio.png"  alt="Logo - Nicolas Jofre"></a>
-                </picture>
-            </div>
+      <nav class="menu-bar">
+        <div>
+          <picture>
+            <a href=""
+              ><img
+                class="logo-portafolio"
+                src="assets/img/logo_portfolio.png"
+                alt="Logo - Nicolas Jofre"
+            /></a>
+          </picture>
+        </div>
 
-            <div class="nav-links">
-                <ul class="menu" id="menu">
-                    <li class="nav-links"><a href="#Inicio" onclick="hideMenu()"  class="active link">Inicio</a></li>
-                    <li class="nav-links"><a href="#sobreMi" class="link">Sobre mi</a></li>
-                    <li class="nav-links"><a href="#Proyectos" class="link">Proyectos</a>  </li>
-                    <li class="nav-links"><a href="#Contacto" class="link">Contacto</a></li>
-                </ul>                
-            </div>
-            <div class="">
-                <button class="btn-darkmode" onclick="myFunction()" id="moonBtn"><i class="fa-solid fa-circle-half-stroke"></i></button>
-                <button class="btn-togler" id="btn-toggle"><i class="fa-solid fa-bars"></i></button>
-            </div>
-                 
-            
-        </nav>
+        <div class="nav-links">
+          <ul class="menu" id="menu">
+            <li class="nav-links">
+              <a href="#Inicio" onclick="hideMenu()" class="active link"
+                >Inicio</a
+              >
+            </li>
+            <li class="nav-links">
+              <a href="#sobreMi" class="link">Sobre mi</a>
+            </li>
+            <li class="nav-links">
+              <a href="#Proyectos" class="link">Proyectos</a>
+            </li>
+            <li class="nav-links">
+              <a href="#Contacto" class="link">Contacto</a>
+            </li>
+          </ul>
+        </div>
+        <div class="">
+          <button class="btn-darkmode" onclick="myFunction()" id="moonBtn">
+            <i class="fa-solid fa-circle-half-stroke"></i>
+          </button>
+          <button class="btn-togler" id="btn-toggle">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </nav>
     </header>
 
     <main>
-        <section id="Inicio">
-            <h3 class="subTitulo">Desarrollador</h3>
-            <div>
-                <h1 class="tituloNombre">Mi nombre es <span class="nombreTitle">Nicolas Jofre</span></h1>
-                <div class="cont-btn-cv">
-                    <a href="assets/docs/CV2022V1.pdf" class="btn-cv" target="_blank">Visualizar CV</a>                        
-                </div>
-            </div>
-            
-          
-        </section>
-
-        <section id="sobreMi">
-            <h2>Sobre mi</h2>
-            <h3>Hola. Soy un desarrollador de Buenos Aires, Argentina.
-                Actualmente me encuentro realizando trabajos de front-end y podes encontrar mis repositorios
-                haciendo click <a href="https://github.com/nicojofre5" target="_blank">aquí</a>.
-            </h3>
-            <div class="cont-sobremi">
-                <div class="cont-perfil">
-                    <h5>Perfil</h5>
-                    <figure class="img-perfil">
-                        <img src="assets/img/Perfil1.png" alt="">
-                    </figure>
-                    <div class="cont-info">
-                        <fieldset class="fieldset-perfil">
-                            <label class="datos-skill" for="" >Nombres y apellido</label>
-                            <input  type="text" value="Leonardo Nicolas Jofre" disabled>
-                            <label class="datos-skill" for="">Email</label>
-                            <input type="email" value="info@nicolasjofre.com.ar" disabled>
-                        </fieldset>
-                        <div class="cont-btn-inicio">
-                            <a href="nicojofre5" class="btn gh" target="_blank"><i class="fa-brands fa-github"></i></a>
-                            <a href="" class="btn fb"><i class="fa-brands fa-linkedin"></i></a>
-                            <a href="" class="btn tw"><i class="fa-brands fa-twitter"></i></a>
-                        </div>
-                 
-                    </div>
-                </div>
-
-                <div class="cont-skill">
-                    <h5>Skills</h5>
-                    <div class="cont-card-skill">
-                        <div class="fila">
-                            <div class="card">
-                                <figure class="img-skill">
-                                    <img src="assets/img/html.png" alt="">
-                                    <figcaption>HTML</figcaption>
-                                </figure>   
-                            </div>
-                            <div class="card">
-                                <figure class="img-skill">
-                                    <img src="assets/img/css.png" alt="">
-                                    <figcaption>CSS 3</figcaption>
-                                </figure>        
-                            </div>
-                            <div class="card">
-                                <figure class="img-skill">
-                                    <img src="assets/img/js.png" alt="">
-                                    <figcaption>JavaScript</figcaption>
-                                </figure>
-                                
-                            </div>
-                            <div class="card">
-                                <figure class="img-skill">
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1200px-Bootstrap_logo.svg.png" alt="">
-                                    <figcaption>Bootstrap</figcaption>
-                                </figure>
-                                
-                            </div>
-                        </div>
-                        <div class="fila">
-                            <div class="card">
-                                <figure class="img-skill">
-                                    <img src="assets/img/c.png" alt="">
-                                    <figcaption>C#</figcaption>
-                                </figure>
-                                
-                            </div>
-                            <div class="card">
-                                <figure class="img-skill">
-                                    <img src="assets/img/mysql.png" alt="">
-                                    <figcaption>SQL</figcaption>
-                                </figure>
-                                
-                            </div>
-                            <div class="card">
-                                <figure class="img-skill">
-                                    <img src="assets/img/angular.png" alt="">
-                                    <figcaption>Angular</figcaption>
-                                </figure>
-                                
-                            </div>
-                            <div class="card">
-                                <figure class="img-skill">
-                                    <img src="assets/img/photoshop.png" alt="">
-                                    <figcaption>Photoshop</figcaption>
-                                </figure>
-                                
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-        </section>
-
-        <section id="Proyectos">
-            <h2>Mis proyectos</h2>
-            <h3 class="sub_title">Conoce mis proyectos</h3>
-            <div class="cont-card-proyecto">
-                <div class="row">
-                    <div class="card-proyecto">
-                        <figure class="cont-img-proyecto">
-                            <img src="assets/img/project1.png" alt="" height="240px" onclick="">
-                        </figure>
-                        <div class="card-body">
-                            <h3>Rotiseria Nico</h3>
-                            <h5>Es un proyecto realizado para una casa de comidas. Próximamente nueva versión e-commerce</h5>
-                            <div class="cont-label-project">
-                                <p>HTML</p>
-                                <p>CSS</p>
-                                <p>BOOTSTRAP</p>
-                            </div>
-                            <div class="cont-button-project">
-                                <a href="">Demo</a>
-                                <a href="">Code</a>
-                            </div>
-                        </div>  
-                       
-                    </div>
-                    <div class="card-proyecto">
-                        <figure class="cont-img-proyecto">
-                            <img src="assets/img/project2.png" alt="" >
-                        </figure>
-                        <div class="card-body">
-                            <h3>Dani Rivero</h3>
-                            <h5>Es un proyecto realizado para una casa de comidas. Próximamente nueva versión e-commerce</h5>
-                            <div class="cont-label-project">
-                                <p>HTML</p>
-                                <p>CSS</p>
-                                <p>JAVASCRIPT</p>
-                            </div>
-                            <div class="cont-button-project">
-                                <a href="">Demo</a>
-                                <a href="">Code</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-proyecto">
-                        <figure class="cont-img-proyecto">
-                            <img src="https://image.winudf.com/v2/image/bXBsLmNvbS5jb21pbmdzb29uX3NjcmVlbl8wXzE1MzQ3NTgxODFfMDQ0/screen-0.jpg?fakeurl=1&type=.webp" alt="">
-                        </figure>
-                        <div class="card-body">
-                            <h3>Dani Rivero</h3>
-                            <h5>Es un proyecto realizado para una casa de comidas. Próximamente nueva versión e-commerce</h5>
-                            <div class="cont-label-project">
-                                <p>HTML</p>
-                                <p>CSS</p>
-                                <p>JAVASCRIPT</p>
-                            </div>
-                            <div class="cont-button-project">
-                                <a href="">Demo</a>
-                                <a href="">Code</a>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    <div class="card-proyecto">
-                        <figure class="cont-img-proyecto">
-                            <img src="https://image.winudf.com/v2/image/bXBsLmNvbS5jb21pbmdzb29uX3NjcmVlbl8wXzE1MzQ3NTgxODFfMDQ0/screen-0.jpg?fakeurl=1&type=.webp" alt="">
-                        </figure>
-                        <div class="card-body">
-                            <h3>Dani Rivero</h3>
-                            <h5>Es un proyecto realizado para una casa de comidas. Próximamente nueva versión e-commerce</h5>
-                            <div class="cont-label-project">
-                                <p>HTML</p>
-                                <p>CSS</p>
-                                <p>JAVASCRIPT</p>
-                            </div>
-                            <div class="cont-button-project">
-                                <a href="">Demo</a>
-                                <a href="">Code</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-proyecto">
-                        <figure class="cont-img-proyecto">
-                            <img src="https://image.winudf.com/v2/image/bXBsLmNvbS5jb21pbmdzb29uX3NjcmVlbl8wXzE1MzQ3NTgxODFfMDQ0/screen-0.jpg?fakeurl=1&type=.webp" alt="">
-                        </figure>
-                        <div class="card-body">
-                              <h3>Dani Rivero</h3>
-                            <h5>Es un proyecto realizado para una casa de comidas. Próximamente nueva versión e-commerce</h5>
-                            <div class="cont-label-project">
-                                <p>HTML</p>
-                                <p>CSS</p>
-                                <p>JAVASCRIPT</p>
-                            </div>
-                            <div class="cont-button-project">
-                                <a href="">Demo</a>
-                                <a href="">Code</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-proyecto">
-                        <figure class="cont-img-proyecto">
-                            <img src="https://image.winudf.com/v2/image/bXBsLmNvbS5jb21pbmdzb29uX3NjcmVlbl8wXzE1MzQ3NTgxODFfMDQ0/screen-0.jpg?fakeurl=1&type=.webp" alt="">
-                        </figure>
-                        <div class="card-body">
-                              <h3>Dani Rivero</h3>
-                            <h5>Es un proyecto realizado para una casa de comidas. Próximamente nueva versión e-commerce</h5>
-                            <div class="cont-label-project">
-                                <p>HTML</p>
-                                <p>CSS</p>
-                                <p>JAVASCRIPT</p>
-                            </div>
-                            <div class="cont-button-project">
-                                <a href="">Demo</a>
-                                <a href="">Code</a>
-                            </div>
-                        </div>
-                    </div>
-                   
-                </div>
-               
-            </div>
-        </section>
-
-        <section id="Contacto">
-            <h2>Contactame</h2>
-            <div class="div-section-contact">
-                <div class="cont-redes-project">
-                    <h3>¿Tenés un proyecto en mente?</h3>
-                    <h4>¡Me encantaría ayudarte!</h4>
-                    <div class="flex-redes">
-                        <a href="" class="btn gh"><i class="fa-brands fa-github"></i></a>
-                        <a href="" class="btn fb "><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="" class="btn tw"><i class="fa-brands fa-twitter"></i></a>
-                    </div>
-                </div>
-                <div class="cont-form">
-                    <form action="" method="post">
-                        <fieldset class="sep-contacto">
-                            <label for="">Nombre</label>
-                            <input type="text" name="" id="" placeholder="Ingrese su nombre completo">
-                        </fieldset>
-                        <fieldset class="sep-contacto">
-                            <label for="">Email</label>
-                            <input type="email" name="" id="" placeholder="Ingrese su email">
-                        </fieldset>
-                        <fieldset class="sep-contacto">
-                            <label for="">Consulta</label>
-                            <textarea name="" id="" cols="30" rows="10"></textarea>
-                        </fieldset>
-                        <div class="cont-btn-enviar">
-                            <button>Enviar</button>
-                        </div>
-                        
-                    </form>
-                </div>
-            </div>
-            
-        </section>
-    </main>
-   
-    <footer>
-     
-        <div class="copyright">
-            <h5>Todos los derechos reservados &copy; <br><a href="" class="footer-user">Nicolas Jofre &reg;</a> 2023</h5>
+      <section id="Inicio">
+        <h3 class="subTitulo">Desarrollador</h3>
+        <div>
+          <h1 class="tituloNombre">
+            Mi nombre es <span class="nombreTitle">Nicolas Jofre</span>
+          </h1>
+          <div class="cont-btn-cv">
+            <a href="assets/docs/CV2022V1.pdf" class="btn-cv" target="_blank"
+              >Visualizar CV</a
+            >
+          </div>
         </div>
+      </section>
+
+      <section id="sobreMi">
+        <h2>Sobre mi</h2>
+        <h3>
+          Hola. Soy un desarrollador de Buenos Aires, Argentina. Actualmente me
+          encuentro realizando trabajos de front-end y podes encontrar mis
+          repositorios haciendo click
+          <a href="https://github.com/nicojofre5" target="_blank">aquí</a>.
+        </h3>
+        <div class="cont-sobremi">
+          <div class="cont-perfil">
+            <h5>Perfil</h5>
+            <figure class="img-perfil">
+              <img src="assets/img/Perfil1.png" alt="" />
+            </figure>
+            <div class="cont-info">
+              <fieldset class="fieldset-perfil">
+                <label class="datos-skill" for="">Nombres y apellido</label>
+                <input type="text" value="Leonardo Nicolas Jofre" disabled />
+                <label class="datos-skill" for="">Email</label>
+                <input type="email" value="info@nicolasjofre.com.ar" disabled />
+              </fieldset>
+              <div class="cont-btn-inicio">
+                <a href="nicojofre5" class="btn gh" target="_blank"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+                <a href="" class="btn fb"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+                <a href="" class="btn tw"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="cont-skill">
+            <h5>Skills</h5>
+            <div class="cont-card-skill">
+              <div class="fila">
+                <div class="card">
+                  <figure class="img-skill">
+                    <img src="assets/img/html.png" alt="" />
+                    <figcaption>HTML</figcaption>
+                  </figure>
+                </div>
+                <div class="card">
+                  <figure class="img-skill">
+                    <img src="assets/img/css.png" alt="" />
+                    <figcaption>CSS 3</figcaption>
+                  </figure>
+                </div>
+                <div class="card">
+                  <figure class="img-skill">
+                    <img src="assets/img/js.png" alt="" />
+                    <figcaption>JavaScript</figcaption>
+                  </figure>
+                </div>
+                <div class="card">
+                  <figure class="img-skill">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1200px-Bootstrap_logo.svg.png"
+                      alt=""
+                    />
+                    <figcaption>Bootstrap</figcaption>
+                  </figure>
+                </div>
+              </div>
+              <div class="fila">
+                <div class="card">
+                  <figure class="img-skill">
+                    <img src="assets/img/c.png" alt="" />
+                    <figcaption>C#</figcaption>
+                  </figure>
+                </div>
+                <div class="card">
+                  <figure class="img-skill">
+                    <img src="assets/img/mysql.png" alt="" />
+                    <figcaption>SQL</figcaption>
+                  </figure>
+                </div>
+                <div class="card">
+                  <figure class="img-skill">
+                    <img src="assets/img/angular.png" alt="" />
+                    <figcaption>Angular</figcaption>
+                  </figure>
+                </div>
+                <div class="card">
+                  <figure class="img-skill">
+                    <img src="assets/img/photoshop.png" alt="" />
+                    <figcaption>Photoshop</figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="Proyectos">
+        <h2>Mis proyectos</h2>
+        <h3 class="sub_title">Conoce mis proyectos</h3>
+        <div class="cont-card-proyecto">
+          <div class="row">
+            <div class="card-proyecto">
+              <figure class="cont-img-proyecto">
+                <img
+                  src="assets/img/project1.png"
+                  alt=""
+                  height="240px"
+                  onclick=""
+                />
+              </figure>
+              <div class="card-body">
+                <h3>Rotiseria Nico</h3>
+                <h5>
+                  Es un proyecto realizado para una casa de comidas.
+                  Próximamente nueva versión e-commerce
+                </h5>
+                <div class="cont-label-project">
+                  <p>HTML</p>
+                  <p>CSS</p>
+                  <p>BOOTSTRAP</p>
+                </div>
+                <div class="cont-button-project">
+                  <a href="">Demo</a>
+                  <a href="">Code</a>
+                </div>
+              </div>
+            </div>
+            <div class="card-proyecto">
+              <figure class="cont-img-proyecto">
+                <img src="assets/img/project2.png" alt="" />
+              </figure>
+              <div class="card-body">
+                <h3>Dani Rivero</h3>
+                <h5>
+                  Es un proyecto realizado para una casa de comidas.
+                  Próximamente nueva versión e-commerce
+                </h5>
+                <div class="cont-label-project">
+                  <p>HTML</p>
+                  <p>CSS</p>
+                  <p>JAVASCRIPT</p>
+                </div>
+                <div class="cont-button-project">
+                  <a href="">Demo</a>
+                  <a href="">Code</a>
+                </div>
+              </div>
+            </div>
+            <div class="card-proyecto">
+              <figure class="cont-img-proyecto">
+                <img
+                  src="https://image.winudf.com/v2/image/bXBsLmNvbS5jb21pbmdzb29uX3NjcmVlbl8wXzE1MzQ3NTgxODFfMDQ0/screen-0.jpg?fakeurl=1&type=.webp"
+                  alt=""
+                />
+              </figure>
+              <div class="card-body">
+                <h3>Dani Rivero</h3>
+                <h5>
+                  Es un proyecto realizado para una casa de comidas.
+                  Próximamente nueva versión e-commerce
+                </h5>
+                <div class="cont-label-project">
+                  <p>HTML</p>
+                  <p>CSS</p>
+                  <p>JAVASCRIPT</p>
+                </div>
+                <div class="cont-button-project">
+                  <a href="">Demo</a>
+                  <a href="">Code</a>
+                </div>
+              </div>
+            </div>
+            <div class="card-proyecto">
+              <figure class="cont-img-proyecto">
+                <img
+                  src="https://image.winudf.com/v2/image/bXBsLmNvbS5jb21pbmdzb29uX3NjcmVlbl8wXzE1MzQ3NTgxODFfMDQ0/screen-0.jpg?fakeurl=1&type=.webp"
+                  alt=""
+                />
+              </figure>
+              <div class="card-body">
+                <h3>Dani Rivero</h3>
+                <h5>
+                  Es un proyecto realizado para una casa de comidas.
+                  Próximamente nueva versión e-commerce
+                </h5>
+                <div class="cont-label-project">
+                  <p>HTML</p>
+                  <p>CSS</p>
+                  <p>JAVASCRIPT</p>
+                </div>
+                <div class="cont-button-project">
+                  <a href="">Demo</a>
+                  <a href="">Code</a>
+                </div>
+              </div>
+            </div>
+            <div class="card-proyecto">
+              <figure class="cont-img-proyecto">
+                <img
+                  src="https://image.winudf.com/v2/image/bXBsLmNvbS5jb21pbmdzb29uX3NjcmVlbl8wXzE1MzQ3NTgxODFfMDQ0/screen-0.jpg?fakeurl=1&type=.webp"
+                  alt=""
+                />
+              </figure>
+              <div class="card-body">
+                <h3>Dani Rivero</h3>
+                <h5>
+                  Es un proyecto realizado para una casa de comidas.
+                  Próximamente nueva versión e-commerce
+                </h5>
+                <div class="cont-label-project">
+                  <p>HTML</p>
+                  <p>CSS</p>
+                  <p>JAVASCRIPT</p>
+                </div>
+                <div class="cont-button-project">
+                  <a href="">Demo</a>
+                  <a href="">Code</a>
+                </div>
+              </div>
+            </div>
+            <div class="card-proyecto">
+              <figure class="cont-img-proyecto">
+                <img
+                  src="https://image.winudf.com/v2/image/bXBsLmNvbS5jb21pbmdzb29uX3NjcmVlbl8wXzE1MzQ3NTgxODFfMDQ0/screen-0.jpg?fakeurl=1&type=.webp"
+                  alt=""
+                />
+              </figure>
+              <div class="card-body">
+                <h3>Dani Rivero</h3>
+                <h5>
+                  Es un proyecto realizado para una casa de comidas.
+                  Próximamente nueva versión e-commerce
+                </h5>
+                <div class="cont-label-project">
+                  <p>HTML</p>
+                  <p>CSS</p>
+                  <p>JAVASCRIPT</p>
+                </div>
+                <div class="cont-button-project">
+                  <a href="">Demo</a>
+                  <a href="">Code</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="Contacto">
+        <h2>Contactame</h2>
+        <div class="div-section-contact">
+          <div class="cont-redes-project">
+            <h3>¿Tenés un proyecto en mente?</h3>
+            <h4>¡Me encantaría ayudarte!</h4>
+            <div class="flex-redes">
+              <a href="" class="btn gh"><i class="fa-brands fa-github"></i></a>
+              <a href="" class="btn fb"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="" class="btn tw"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+          </div>
+          <div class="cont-form">
+            <form action="php/correo.php" method="post">
+              <fieldset class="sep-contacto">
+                <label for="nombre">Nombre y apellido</label>
+                <input
+                  type="text"
+                  name="nombre"
+                  id="nombre"
+                  placeholder="Ingrese su nombre completo"
+                />
+              </fieldset>
+              <fieldset class="sep-contacto">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Ingrese su email"
+                />
+              </fieldset>
+              <fieldset class="sep-contacto">
+                <label for="">Consulta</label>
+                <textarea
+                  name="consulta"
+                  id="consulta"
+                  cols="30"
+                  rows="10"
+                ></textarea>
+              </fieldset>
+              <div class="cont-btn-enviar">
+                <button type="submit">Enviar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="copyright">
+        <h5>
+          Todos los derechos reservados &copy; <br /><a
+            href=""
+            class="footer-user"
+            >Nicolas Jofre &reg;</a
+          >
+          2023
+        </h5>
+      </div>
     </footer>
 
-    <script src="https://kit.fontawesome.com/63586a8960.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/63586a8960.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="js/main.js"></script>
-
-
-        
-</body>
-
+  </body>
 </html>
