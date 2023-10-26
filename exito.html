@@ -1,12 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nicolas Jofre | Consulta</title>
-    <link rel="stylesheet" href="assets/styles/main.css">
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="assets/styles/main.css" />
+  </head>
+  <body id="body-exito">
+    <main>
+      <h1>En instantes volverás a la página principal</h1>
+      <h2>Gracias por realizar tu consulta</h2>
+      <p>En breves le responderemos</p>
+    </main>
+
+    <picture class="cont-logo-exito">
+      <img src="assets/img/logo_portfolio.png" alt="logo Nicolas Jofre" />
+    </picture>
+
+    <script>
+        setTimeout(function () {
+          window.location.replace("https://cuiprotec.com.ar");
+        }, 4000);
+      </script> 
+  </body>
 </html>

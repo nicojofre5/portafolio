@@ -569,6 +569,24 @@ footer{
 } 
 /* Fin multi selectores */
 
+
+
+/* Pagina de exito */
+
+.cont-logo-exito img{
+  width: 200px;
+}
+
+#body-exito{
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  padding:10px 30px;
+
+}
 /* MediaQuery */
 
 @media only screen and (min-width: 200px) and (max-width: 700px) {
