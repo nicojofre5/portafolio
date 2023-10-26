@@ -11,7 +11,7 @@
     scroll-behavior: smooth;
 }
 body{
-  background-image:linear-gradient(rgba(175, 160, 198, 0.843),rgba(203, 151, 219, 0.926)), url(/assets/img/fondo.jpg);
+  background-image:linear-gradient(rgba(175, 160, 198, 0.843),rgba(203, 151, 219, 0.926)), url(../img/fondo.webp);
   font-family: var(--secondary-font);
   color: black;
   
@@ -236,9 +236,8 @@ fieldset{
  
 }
 .img-skill>img{
-  width: 80px;
-  height:75px;
-  padding: 10px;
+  width: 70px;
+  padding: 8px;
 }
 .fila{
   display: flex;
@@ -531,7 +530,7 @@ footer{
 }
 .footer-user{
   text-decoration:none;
-  color:blueviolet;
+  color:rgb(234, 220, 233);
 }
 .cont-redes-project h3{
   font-size: 1.8em;
@@ -565,7 +564,7 @@ footer{
 .dark-mode {
   background: var(--secondary-color);
   color: white;
-  background-image:linear-gradient(rgba(35, 13, 70, 0.939),rgba(37, 3, 47, 0.926)), url(/assets/img/fondo.jpg);
+  background-image:linear-gradient(rgba(35, 13, 70, 0.939),rgba(37, 3, 47, 0.926)), url(../img/fondo.webp);
 } 
 /* Fin multi selectores */
 

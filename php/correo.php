@@ -11,6 +11,13 @@
     $mensaje = $_POST["mensaje"];
     $asunto = "Consulta desde la web";
 
+    $ip = $_SERVER['REMOTE_ADDR'];
+    $captcha = $_POST['g-recaptcha-response'];
+    $secretkey = "6LcaZ9EoAAAAAHdnATnLQk16h7DXehwDuWdJYgLv";
+
+    $respuesta= file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$secretkey&response=$captcha");
+    $atributos = json_decode($respuesta,TRUE);
+  
     $mail = new PHPMailer(true);
 
     $smtpHost = "c1452366.ferozo.com";
