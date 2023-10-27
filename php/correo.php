@@ -11,19 +11,42 @@
     $mensaje = $_POST["mensaje"];
     $asunto = "Consulta desde la web";
 
-    $ip = $_SERVER['REMOTE_ADDR'];
-    $captcha = $_POST['g-recaptcha-response'];
-    $secretkey = "6LcaZ9EoAAAAAHdnATnLQk16h7DXehwDuWdJYgLv";
+    if(isset($_POST['g-recaptcha-response'])){
+        $response = $_POST['g-recaptcha-response'];
 
-    $respuesta= file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$secretkey&response=$captcha");
-    $atributos = json_decode($respuesta,TRUE);
-  
+        if(!$response){
+            echo "<script>alert('Vuelva atrás y haga click en el captcha')</script>";
+            exit;
+        }
+    else{
+        $secretkey = "6LcaZ9EoAAAAAHdnATnLQk16h7DXehwDuWdJYgLv";
+        $ip = $_SERVER['REMOTE_ADDR'];
+        $url = "https://www.google.com/recaptcha/api/siteverify";
+        $finalresponse = file_get_contents($url."?secret=".$secretkey."&response=".$response."&remoteip=".$ip);
+        $responseKeys = json_decode($finalresponse,true);
+
+    if($responseKeys['success']){
+        header("Location:../exito.html");
+    }
+    else{
+        echo("Algo ha salido mal");
+    }
+   }
+   
+
+}   
+   
+
+
+
+
+   
     $mail = new PHPMailer(true);
 
     $smtpHost = "c1452366.ferozo.com";
-    $smtpUsuario = "consultas@nicolasjofre.com.ar";
+    $smtpUsuario = "info@nicolasjofre.com.ar";
     $smtpClave= "Marcelus660*";
-    $emailDestino = "info@nicolasjofre.com.ar";
+    $emailDestino = "consultas@nicolasjofre.com.ar";
     $mail->Host =  $smtpHost;
     $mail->Username=$smtpUsuario;
     $mail->Password=$smtpClave;
@@ -34,7 +57,7 @@
     $mail->CharSet="utf-8";
 
     $mail->setFrom($email,$nombre);
-    $mail->addAddress('info@nicolasjofre.com.ar');
+    $mail->addAddress('consultas@nicolasjofre.com.ar');
     $mail->isHTML(true);
     $mail->Subject= $asunto;
     $mensajeHtml = nl2br($mensaje);

@@ -445,9 +445,17 @@ form{
   display: block;
   width: 100%;
   resize: none;
-  font-size: 1.9em;
+  font-size: 1.9rem;
+
 }
 
+textarea{
+  background-color: transparent;
+  color: inherit;
+  font-family: var(--secondary-font);
+  font-size: 1.5em;
+  padding: 10px;
+}
 .cont-btn-enviar{
   text-align: center;
   margin: 10px 0px 0px;
@@ -465,7 +473,7 @@ form{
 .sep-contacto>input{
   background-color: transparent;
   border: 2px solid #fbf2fb;
-  color:#eee;
+  color:inherit;
   height: 20px;
   padding: 25px 6px;
   font-size: 1.4em;
