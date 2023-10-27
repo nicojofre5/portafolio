@@ -11,7 +11,7 @@
     scroll-behavior: smooth;
 }
 body{
-  background-image:linear-gradient(rgba(175, 160, 198, 0.843),rgba(203, 151, 219, 0.926)), url(../img/fondo.webp);
+  background-image:linear-gradient(rgba(175, 160, 198, 0.843),rgba(203, 151, 219, 0.926));
   font-family: var(--secondary-font);
   color: black;
   
@@ -283,7 +283,7 @@ fieldset{
 .cont-info fieldset label{
   text-align: start;
   font-size: 2em;
-  font-family: var(--primary-font);
+  font-family: var(--secondary-font);
   font-weight: bold;
 }
 .gh i{
@@ -331,11 +331,12 @@ i:hover{
 }
 
 .fieldset-perfil>input[type="text"],.fieldset-perfil>input[type="email"]{
-  font-size: 1.8em;
-  font-family: var(--secondary-font);
-  min-width: 270px;
+  font-size: 2rem;
+  font-family: var(--primary-font);
+  min-width: 230px;
   background-color: transparent;
   border: none;
+  font-weight: 200;
   border-bottom: 2px solid rgb(170, 70, 207);
   color:inherit;
   margin: 8px 0px;
@@ -364,7 +365,7 @@ i:hover{
 }
 .cont-img-proyecto>img{
   width: 300px;
-  height: 180px;
+  
   border-radius: 7px;
   border: 1px solid grey;
 }
