@@ -1,3 +1,17 @@
+
+@font-face {
+  font-family: Play;
+  src: url('../fonts/Play/Play-Regular.ttf'), 
+       url('../fonts/Play/Play-Bold.ttf'); 
+}
+
+@font-face {
+  font-family: Fira Mono;
+  src: url('../fonts/Fira_Mono/FiraMono-Regular.ttf'),
+       url('../fonts/Fira_Mono/FiraMono-Medium.ttf'),
+       url('../fonts/Fira_Mono/FiraMono-Bold.ttf');
+}
+
 :root{
   --primary-font:'Play', sans-serif;
   --secondary-font:'Fira Mono', monospace;
@@ -456,6 +470,7 @@ textarea{
   font-family: var(--secondary-font);
   font-size: 1.5em;
   padding: 10px;
+  border:2px solid white;
 }
 .cont-btn-enviar{
   text-align: center;

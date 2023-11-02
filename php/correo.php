@@ -18,20 +18,20 @@
             echo "<script>alert('Vuelva atrás y haga click en el captcha')</script>";
             exit;
         }
-    else{
-        $secretkey = "6LcaZ9EoAAAAAHdnATnLQk16h7DXehwDuWdJYgLv";
-        $ip = $_SERVER['REMOTE_ADDR'];
-        $url = "https://www.google.com/recaptcha/api/siteverify";
-        $finalresponse = file_get_contents($url."?secret=".$secretkey."&response=".$response."&remoteip=".$ip);
-        $responseKeys = json_decode($finalresponse,true);
+//     else{
+//         $secretkey = "6LcaZ9EoAAAAAHdnATnLQk16h7DXehwDuWdJYgLv";
+//         $ip = $_SERVER['REMOTE_ADDR'];
+//         $url = "https://www.google.com/recaptcha/api/siteverify";
+//         $finalresponse = file_get_contents($url."?secret=".$secretkey."&response=".$response."&remoteip=".$ip);
+//         $responseKeys = json_decode($finalresponse,true);
 
-    if($responseKeys['success']){
-        header("Location:../exito.html");
-    }
-    else{
-        echo("Algo ha salido mal");
-    }
-   }
+//     if($responseKeys['success']){
+//         header("Location:../exito.html");
+//     }
+//     else{
+//         echo("Algo ha salido mal");
+//     }
+//    }
    
 
 }   
