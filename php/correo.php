@@ -29,10 +29,7 @@
    
     $mail = new PHPMailer(true);
 
-    $smtpHost = "c1452366.ferozo.com";
-    $smtpUsuario = "info@nicolasjofre.com.ar";
-    $smtpClave= "Marcelus660*";
-    $emailDestino = "consultas@nicolasjofre.com.ar";
+  
     $mail->Host =  $smtpHost;
     $mail->Username=$smtpUsuario;
     $mail->Password=$smtpClave;
