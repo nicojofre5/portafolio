@@ -588,7 +588,7 @@ footer{
 .dark-mode {
   background: var(--secondary-color);
   color: white;
-  background-image:linear-gradient(rgba(35, 13, 70, 0.939),rgba(37, 3, 47, 0.926)), url(../img/fondo.webp);
+  background-image:linear-gradient(rgba(35, 13, 70, 0.939),rgba(37, 3, 47, 0.926));
 } 
 /* Fin multi selectores */
 
