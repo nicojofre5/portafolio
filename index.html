@@ -32,8 +32,12 @@
     />
 
     <link rel="stylesheet" href="assets/styles/main.css" />
-
-    <link rel="icon" href="assets/img/logo_portfolio.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/img/blanco_logo.png " type="image/x-icon" />
     <title>Nicolas Jofre | Portafolio</title>
   </head>
 
@@ -45,7 +49,7 @@
             <a href="https://nicolasjofre.com.ar"
               ><img
                 class="logo-portafolio"
-                src="assets/img/logo_portfolio.webp"
+                src="assets/img/negro_png_logo copia.png"
                 alt="Logo - Nicolas Jofre"
             /></a>
           </picture>
@@ -70,9 +74,7 @@
           </ul>
         </div>
         <div>
-          <button class="btn-darkmode" onclick="myFunction()" id="moonBtn">
-            <i class="fa-solid fa-circle-half-stroke"></i>
-          </button>
+          <button class="contacto-btn">Contactame</button>
           <button class="btn-togler" id="btn-toggle">
             <i class="fa-solid fa-bars"></i>
           </button>
@@ -80,21 +82,18 @@
       </nav>
     </header>
 
-    <main>
+    <main class="main-index">
       <section id="Inicio">
-        <h3 class="subTitulo">Desarrollador</h3>
         <div>
-          <h1 class="tituloNombre">
-            Mi nombre es <span class="nombreTitle">Nicolas Jofre</span>
-          </h1>
+          <h1 class="tituloNombre"><span class="nombreTitle">Nicolas Jofre</span>. Desarrollo web para ideas que inspiran.</h1>
+          <h3 class="subTitulo">Diseño y desarrollo páginas web optimizadas para potenciar marcas y negocios</h3>
           <div class="cont-btn-cv">
-            <a href="assets/docs/CVNICOLASJOFRE-WEBSITE.pdf" class="btn-cv" target="_blank"
-              >Visualizar CV</a
-            >
+            <a href="assets/docs/CVNICOLASJOFRE-WEBSITE.pdf" class="btn-proyecto btn-cv" target="_blank">Ver mis proyectos</a>
+            <a href="assets/docs/CVNICOLASJOFRE-WEBSITE.pdf" class="btn-contactame btn-cv" target="_blank">Contactame</a>
           </div>
         </div>
       </section>
-
+    </main>
       <section id="sobreMi">
         <h2>Sobre mi</h2>
         <h3>
@@ -415,7 +414,7 @@
           </div>
           <div class="cont-form">
             <form action="php/correo.php" method="post" autocomplete="off">
-              <fieldset class="sep-contacto">
+              <fieldset class="sep-contacto" id="contacto-nombreap">
                 <label for="nombre">Nombre y apellido</label>
                 <input
                   type="text"
@@ -457,7 +456,7 @@
           </div>
         </div>
       </section>
-    </main>
+    
 
     <footer>
       <div class="copyright">

@@ -3,8 +3,13 @@ let menu_container=document.getElementById('menu');
 let link = menu_container.getElementsByClassName("link");
 let menu_bar = document.querySelector('#btn-toggle');
 var prevScrollpos = window.pageYOffset;
+const ibnombre = document.getElementById('nombre');
 
-
+const validacion = document.createElement('p');
+const node = document.createTextNode('Te estas olvidndo de algo');
+validacion.appendChild(node);
+const contenedor = document.getElementById('contacto-nombreap');
+contenedor.appendChild(node);
 
 window.onscroll = function() {
     var currentScrollPos = window.pageYOffset;

@@ -47,7 +47,7 @@
     $mail->Body = "<h1>Form enviado desde la web</h1><h3>Consulta al nombre de: $nombre con la cuenta de mail de $email y la consulta es: </h3><h4>{$mensajeHtml}</h4>"; // Texto del email en formato HTML
     $mail->AltBody = "$nombre - $email - {$mensaje}";
     if ($estadoEnvio) {
-        header("Location:../exito.html");
+        header(header: "Location:../exito.html");
     } else {
         echo "Ocurrió un error inesperado.";
     }
